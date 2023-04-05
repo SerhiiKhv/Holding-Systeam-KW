@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-import {Header} from "./Component/Header/Header";
 import {Nav} from "./Component/Nav/Nav";
 import {LanguageProvider} from "./Component/Language/components/LanguageContext";
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
@@ -14,8 +13,6 @@ import {FinancialReport} from "./Component/Content/FinancialReport/FinancialRepo
 const AppStart = () => {
     return (
         <div className='app-wrapper'>
-            <Header/>
-
             <Nav/>
 
             <div className='app-wrapper-content'>

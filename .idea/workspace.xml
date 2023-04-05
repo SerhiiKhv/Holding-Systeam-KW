@@ -5,33 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b65767a5-3ac5-48eb-8066-f803a31a0157" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Assets/background/1616432910_13-p-zadnii-fon-chernii-14.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Assets/background/images.jfif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Component/Content/Company/Company.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Component/Content/Currency/Currency.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Component/Content/Enterprise/Enterprise.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Component/Content/FinancialReport/FinancialReport.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Component/Header/Header.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Component/Header/Header.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Component/Language/LanguageType/en.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Component/Language/LanguageType/jp.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Component/Language/LanguageType/ua.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Component/Language/components/CheckLanguageType.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Component/Language/components/LanguageContext.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Component/Language/components/LanguageSwitcher.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Component/Language/components/LanguageSwitcher.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Component/Language/img/ENFlag.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Component/Language/img/JapanFlag.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Component/Language/img/UAFlag.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Component/Nav/Nav.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Component/Nav/Nav.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/app-reducer.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/redux-store.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Redux/Types/types.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/Content/Currency/Currency.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/Currency/Currency.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/Header/Header.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/Header/Header.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/Nav/Nav.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Nav/Nav.module.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +25,7 @@
         <option value="SCSS File" />
         <option value="Sass File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -114,7 +96,7 @@
       <option name="presentableId" value="Default" />
       <updated>1680701522049</updated>
       <workItem from="1680701523213" duration="2282000" />
-      <workItem from="1680704183500" duration="1157000" />
+      <workItem from="1680704183500" duration="4192000" />
     </task>
     <task id="LOCAL-00001" summary="Start">
       <created>1680701964809</created>
@@ -123,7 +105,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680701964809</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Preparation">
+      <created>1680705427909</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1680705427909</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,6 +120,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Start" />
-    <option name="LAST_COMMIT_MESSAGE" value="Start" />
+    <MESSAGE value="Preparation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Preparation" />
   </component>
 </project>

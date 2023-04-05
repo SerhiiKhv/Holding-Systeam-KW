@@ -5,8 +5,8 @@
   display: grid;
 
   grid-template-areas:
-   "h h"
-   "n c";
+   "n n"
+   "c c";
 
   grid-template-rows: 60px 1fr;
   grid-template-columns: 1fr 5fr;

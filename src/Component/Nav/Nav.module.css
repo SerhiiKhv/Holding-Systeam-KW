@@ -2,6 +2,8 @@
   grid-area: n;
   background-color: #057fd0;
   padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 }
 
 .activeLink {
