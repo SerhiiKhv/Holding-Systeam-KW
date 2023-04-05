@@ -7,7 +7,7 @@ import { Provider } from 'react-redux';
 import store from "./Redux/redux-store";
 import {Company} from "./Component/Content/Company/Company";
 import {Currency} from "./Component/Content/Currency/Currency";
-import {Enterprise} from "./Component/Content/Enterprise/Enterprise";
+import {Enterprises} from "./Component/Content/Enterprise/Enterprises";
 import {FinancialReport} from "./Component/Content/FinancialReport/FinancialReport";
 
 const AppStart = () => {
@@ -19,7 +19,7 @@ const AppStart = () => {
                 <Routes>
                     <Route path='/company' element={<Company/>}/>
                     <Route path='/currency' element={<Currency/>}/>
-                    <Route path='/enterprise' element={<Enterprise/>}/>
+                    <Route path='/enterprise' element={<Enterprises/>}/>
                     <Route path='/financialReport' element={<FinancialReport/>}/>
                 </Routes>
             </div>

@@ -1,20 +1,15 @@
-export type Currency = {
+export type CompanyType = {
     name: string,
-    price: number
+    Enterprise: Array<EnterpriseType>
 }
 
-export type Company = {
-    name: string,
-    Enterprise: Array<Enterprise>
-}
-
-export type Enterprise = {
+export type EnterpriseType = {
     name: string,
     profit: number,
     dateOfCreation: string
 }
 
-export type FinancialReport = {
+export type FinancialReportType = {
     name: string,
     profit: number,
     startDate: string,
