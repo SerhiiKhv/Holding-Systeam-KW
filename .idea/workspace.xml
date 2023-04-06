@@ -5,15 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b65767a5-3ac5-48eb-8066-f803a31a0157" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Component/Content/Enterprise/Enterprise.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Component/Content/Enterprise/Enterprises.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/Reducers/enterprise-reducer.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/selector/enterprise-selector.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Component/Content/Enterprise/AddEnterprise.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Redux/DateJSON/Enterprises.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Content/Enterprise/Enterprise.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/Enterprise/Enterprise.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/Types/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Types/types.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/redux-store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/redux-store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/Content/Currency/Currency.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/Currency/Currency.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/Content/Enterprise/Enterprises.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/Enterprise/Enterprises.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/Reducers/enterprise-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Reducers/enterprise-reducer.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,9 +21,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="SCSS File" />
-        <option value="TypeScript File" />
-        <option value="TypeScript JSX File" />
         <option value="Sass File" />
+        <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -51,7 +48,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "E:/Навчання/Курсові/Курсова 6 семестр/cod/src/Redux",
+    "last_opened_file_path": "D:/IT/newreact",
     "list.type.of.created.stylesheet": "Sass",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -70,6 +67,7 @@
       <recent name="E:\Навчання\Курсові\Курсова 6 семестр\cod\src\Component" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Навчання\Курсові\Курсова 6 семестр\cod\src\Redux" />
       <recent name="E:\Навчання\Курсові\Курсова 6 семестр\cod\src" />
     </key>
   </component>
@@ -97,7 +95,9 @@
       <option name="presentableId" value="Default" />
       <updated>1680701522049</updated>
       <workItem from="1680701523213" duration="2282000" />
-      <workItem from="1680704183500" duration="5648000" />
+      <workItem from="1680704183500" duration="5708000" />
+      <workItem from="1680710085020" duration="53000" />
+      <workItem from="1680786849135" duration="3777000" />
     </task>
     <task id="LOCAL-00001" summary="Start">
       <created>1680701964809</created>
@@ -120,7 +120,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680708519050</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added Enterprises">
+      <created>1680709973373</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1680709973373</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,6 +137,7 @@
     <MESSAGE value="Start" />
     <MESSAGE value="Preparation" />
     <MESSAGE value="Added functions for currency" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added functions for currency" />
+    <MESSAGE value="Added Enterprises" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Enterprises" />
   </component>
 </project>

@@ -92,7 +92,7 @@ export const Currency = () => {
                     <option value="UAH">UAH</option>
                 </select>
             </div>
-            <div>{amount} {fromCurrency} = {convertedAmount} {toCurrency}</div>
+            <div>{amount} {fromCurrency} = {convertedAmount.toFixed(2)} {toCurrency}</div>
         </div>
     );
 }
