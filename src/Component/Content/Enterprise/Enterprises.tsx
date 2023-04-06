@@ -3,6 +3,7 @@ import {getEnterprise} from "../../../Redux/selector/enterprise-selector";
 import React from "react";
 import {Enterprise} from "./Enterprise";
 import style from "./Enterprise.module.css";
+import {AddEnterprise} from "./AddEnterprise";
 
 export const Enterprises = () => {
     const enterprise = useSelector(getEnterprise)
@@ -12,8 +13,13 @@ export const Enterprises = () => {
 
         <div>
             {
-                enterprise.map(ent => <Enterprise enterprise={ent}/>)
+                enterprise.map((ent: any) => <Enterprise enterprise={ent}/>)
             }
+        </div>
+
+
+        <div>
+            <AddEnterprise/>
         </div>
     </div>
 }
