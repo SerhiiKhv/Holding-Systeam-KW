@@ -5,17 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b65767a5-3ac5-48eb-8066-f803a31a0157" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Api/Api.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NodeJS/Інструкція.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/redux-thunk.d.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Content/Enterprise/AddEnterprise.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/Enterprise/AddEnterprise.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Component/Content/Enterprise/Enterprises.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/Enterprise/Enterprises.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NodeJS/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/NodeJS/server.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Redux/Reducers/enterprise-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Reducers/enterprise-reducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/selector/enterprise-selector.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/selector/enterprise-selector.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +115,7 @@
       <workItem from="1680710085020" duration="53000" />
       <workItem from="1680786849135" duration="5686000" />
       <workItem from="1680792947234" duration="9425000" />
-      <workItem from="1680890375314" duration="3710000" />
+      <workItem from="1680890375314" duration="6244000" />
     </task>
     <task id="LOCAL-00001" summary="Start">
       <created>1680701964809</created>
@@ -174,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680805424649</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="I keep progress">
+      <created>1680894385752</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1680894385752</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,6 +187,7 @@
     <MESSAGE value="Added EnterpriseJSON and update Currency" />
     <MESSAGE value="Added AddEnterprise підготовка" />
     <MESSAGE value="Added node.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added node.js" />
+    <MESSAGE value="I keep progress" />
+    <option name="LAST_COMMIT_MESSAGE" value="I keep progress" />
   </component>
 </project>

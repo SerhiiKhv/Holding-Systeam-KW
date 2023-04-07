@@ -12,11 +12,10 @@ export const Enterprises = () => {
 
     useEffect(() => {
         dispatch(getEnterprise());
-        console.log(enterprise)
-        debugger
     }, []);
 
 
+    console.log(enterprise)
     return <div className={style.enterprise}>
         Enterprise:
 

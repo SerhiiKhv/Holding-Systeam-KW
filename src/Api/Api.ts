@@ -6,9 +6,13 @@ const instance = axios.create({
     baseURL: 'http://localhost:4000/',
 });
 
+type GetEnterpriseType = {
+    enterprise: Array<EnterpriseType>
+}
+
 export const EnterpriseApi = {
     getEntries(){
-        return instance.get<EnterpriseType>(`enterprise`).then(res => res.data);
+        return instance.get<GetEnterpriseType>(`enterprise`).then(res => res.data);
     }
 }
 

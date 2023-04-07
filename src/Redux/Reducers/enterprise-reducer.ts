@@ -5,7 +5,7 @@ import {EnterpriseApi} from "../../Api/Api";
 
 
 let initialState = {
-    enterprise:  [] as Array<EnterpriseType>
+    enterprise: [] as Array<EnterpriseType>
 }
 
 type InitialState = typeof initialState;
@@ -20,29 +20,21 @@ export const enterprisePageReducer = (state = initialState, action: ActionsTypes
                 /*enterprise: [...state.enterprise, action.enterprise]*/
             }
         case 'SET_ENTERPRISE':
-            return {
-                ...state,
-                enterprise: [action.enterprise]
-            }
+            return {...state, enterprise: action.enterprise}
         default:
             return state;
     }
 }
 
 export const actions = {
-    setEnterprise: (enterprise: EnterpriseType) => ({type: 'SET_ENTERPRISE', enterprise} as const),
+    setEnterprise: (enterprise: Array<EnterpriseType>) => ({type: 'SET_ENTERPRISE', enterprise} as const),
     addEnterprise: (enterprise: EnterpriseType) => ({type: 'ADD_ENTERPRISE', enterprise} as const),
 }
 
 export const getEnterprise = ():ThunkType => async (dispatch) => {
     let data = await EnterpriseApi.getEntries();
-    dispatch(actions.setEnterprise(data));
+    dispatch(actions.setEnterprise(data.enterprise));
 }
-
-
-
-
-
 
 export const addEnterprise = (enterprise: EnterpriseType): ThunkType => async (dispatch) => {
     //const enterprises = [...initialState.enterprise, enterprise];
