@@ -6,18 +6,7 @@ const server = http.createServer((request, response) => {
 
     // Обробка запитів GET
     if (method === 'GET') {
-        if (url === '/data') {
-            // Отримання даних з бази даних або з іншого джерела
-            const data = { message: 'Hello, world!' };
-
-            // Встановлення заголовків відповіді
-            response.setHeader('Content-Type', 'application/json');
-            response.setHeader('Access-Control-Allow-Origin', '*');
-
-            // Відправлення даних як відповідь на запит
-            response.write(JSON.stringify(data));
-            response.end();
-        } else if (url === '/enterprise') {
+        if (url === '/enterprise') {
             // Читання даних з JSON-файлу
             fs.readFile("./DateJSON/Enterprises.json", (err, data) => {
                 if (err) {
@@ -30,19 +19,21 @@ const server = http.createServer((request, response) => {
 
                 // Встановлення заголовків відповіді
                 response.setHeader('Content-Type', 'application/json');
-                response.setHeader('Access-Control-Allow-Origin', '*');
+                response.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
+                response.setHeader('Access-Control-Allow-Credentials', 'true');
 
                 // Відправлення даних як відповідь на запит
                 response.write(data);
                 response.end();
             });
-        }else if (url === '/currency') {
+        } else if (url === '/currency') {
             // Отримання даних з бази даних або з іншого джерела
-            const currency = { name: 'UAH'};
+            const currency = { name: 'UAH' };
 
             // Встановлення заголовків відповіді
             response.setHeader('Content-Type', 'application/json');
-            response.setHeader('Access-Control-Allow-Origin', '*');
+            response.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
+            response.setHeader('Access-Control-Allow-Credentials', 'true');
 
             // Відправлення даних як відповідь на запит
             response.write(JSON.stringify(currency));

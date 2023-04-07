@@ -1,0 +1,3 @@
+cd /d E:\Навчання\Курсові\Курсова 6 семестр\cod\src\NodeJS
+
+node server.js

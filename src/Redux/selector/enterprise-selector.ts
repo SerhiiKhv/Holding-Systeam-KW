@@ -1,5 +1,5 @@
 import {AppStateType} from "../redux-store";
 
-export const getEnterprise = (state: AppStateType) => {
+export const getEnterpriseSelector = (state: AppStateType) => {
     return state.enterprise.enterprise;
 }
