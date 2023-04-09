@@ -6,37 +6,17 @@ const instance = axios.create({
     baseURL: 'http://localhost:4000/',
 });
 
-type GetEnterpriseType = {
-    enterprise: Array<EnterpriseType>
-}
-
 export const EnterpriseApi = {
-    getEntries(){
-        return instance.get<GetEnterpriseType>(`enterprise`).then(res => res.data);
+    getEntries() {
+        return instance.get<EnterpriseType[]>(`enterprise`).then(res => res.data);
+    },
+    postEnterprise(name: string, profit: number, dateOfCreation: string) {
+        const data = {
+            name,
+            profit,
+            dateOfCreation
+        };
+        console.log(data)
+        return instance.post<EnterpriseType>(`enterprise`, JSON.stringify(data)).then((res) => res.data);
     }
 }
-
-/*
-
-export const ProfileAPI = {
-    getProfile(userId: number | null){
-        return instance.get<ProfileType>(`profile/` + userId).then(res => res.data);
-    },
-    getStatus(userId: number){
-        return instance.get<string>(`profile/status/` + userId).then(res => res.data);
-    },
-    putStatus(status: string){
-        return instance.put<PutStatusResponseType>(`profile/status`, {status: status}).then(res => res.data);
-    },
-    putPhotos(photosFile: any){
-        const formData = new FormData();
-        formData.append("image", photosFile);
-        return instance.put<PutPhotosResponseType>(`profile/photo`, formData,{
-            headers: {
-                'Content-Type': 'multipart/form-data'
-            }}).then(res => res.data);
-    },
-    putProfile(profile: ProfileType){
-        return instance.put<PutProfileResponseType>(`profile`, {profile: profile}).then(res => res.data);
-    }
-}*/

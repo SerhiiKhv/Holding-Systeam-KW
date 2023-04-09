@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import {Field, Formik} from "formik";
 import {addEnterprise} from "../../../Redux/Reducers/enterprise-reducer";
-import {EnterpriseType} from "../../../Redux/Types/types";
+import {useDispatch} from "react-redux";
 
 export const AddEnterprise = () => {
 
@@ -9,17 +9,15 @@ export const AddEnterprise = () => {
     const [profit, setProfit] = useState(0)
     const [dateOfCreation, setDateOfCreation] = useState('')
 
+    const dispatch = useDispatch()
+
     const submit = (): void => {
-        let enterprise: EnterpriseType = {
-            name,
-            profit,
-            dateOfCreation
-        }
-        addEnterprise(enterprise);
+        dispatch(addEnterprise(name, Number(profit), dateOfCreation));
         setName('');
         setProfit(0);
         setDateOfCreation('');
     };
+
 
     const onNameChange = (e: any) => {
         setName(e.currentTarget.value);
@@ -47,7 +45,7 @@ export const AddEnterprise = () => {
                         type='text' name='name' />
                     <Field
                         value={profit} onChange={onProfitChange}
-                        type='text' name='profit' />
+                        type='number' name='profit' />
                     <Field
                         value={dateOfCreation} onChange={onDateOfCreationChange}
                         type='text' name='dateOfCreation' />
@@ -60,3 +58,4 @@ export const AddEnterprise = () => {
         </Formik>
     </div>
 }
+

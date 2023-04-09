@@ -1,47 +1,93 @@
-const http = require('http');
+const express = require('express');
 const fs = require('fs');
 
-const server = http.createServer((request, response) => {
-    const { method, url } = request;
 
-    // Обробка запитів GET
-    if (method === 'GET') {
-        if (url === '/enterprise') {
-            // Читання даних з JSON-файлу
-            fs.readFile("./DateJSON/Enterprises.json", (err, data) => {
+const app = express();
+app.use(express.json());
+
+const enterprisesFilePath = './DateJSON/Enterprises.json';
+
+app.get('/enterprise', (req, res) => {
+    fs.readFile(enterprisesFilePath, (err, data) => {
+        if (err) {
+            console.error(err);
+            res.status(500).send('Internal server error');
+            return;
+        }
+
+        res.setHeader('Content-Type', 'application/json');
+        res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
+        res.setHeader('Access-Control-Allow-Credentials', 'true');
+        res.send(data);
+    });
+});
+
+app.get('/currency', (req, res) => {
+    const currency = { name: 'UAH' };
+
+    res.setHeader('Content-Type', 'application/json');
+    res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
+    res.setHeader('Access-Control-Allow-Credentials', 'true');
+    res.send(JSON.stringify(currency));
+});
+
+
+const bodyParser = require('body-parser');
+app.use(bodyParser.json());
+app.use((req, res, next) => {
+    let data = '';
+    req.setEncoding('utf8');
+    req.on('data', (chunk) => {
+        data += chunk;
+    });
+    req.on('end', () => {
+        req.body = JSON.parse(data);
+        next();
+    });
+});
+
+app.post('/enterprise', (req, res) => {
+    try {
+        const newEnterprise = req.body;
+
+        fs.readFile(enterprisesFilePath, (err, data) => {
+            if (err) {
+                console.error(err);
+                res.status(500).send('Internal server error');
+                return;
+            }
+
+            const enterprises = JSON.parse(data);
+
+            if (newEnterprise && Object.keys(newEnterprise).length > 0) {
+                enterprises.push(newEnterprise);
+            }
+
+            fs.writeFile(enterprisesFilePath, JSON.stringify(enterprises), (err) => {
                 if (err) {
                     console.error(err);
-                    response.writeHead(500, { 'Content-Type': 'text/plain' });
-                    response.write('Internal server error');
-                    response.end();
+                    res.status(500).send('Internal server error');
                     return;
                 }
 
-                // Встановлення заголовків відповіді
-                response.setHeader('Content-Type', 'application/json');
-                response.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
-                response.setHeader('Access-Control-Allow-Credentials', 'true');
-
-                // Відправлення даних як відповідь на запит
-                response.write(data);
-                response.end();
+                res.setHeader('Content-Type', 'application/json');
+                res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
+                res.setHeader('Access-Control-Allow-Credentials', 'true');
+                res.sendStatus(200);
             });
-        } else if (url === '/currency') {
-            // Отримання даних з бази даних або з іншого джерела
-            const currency = { name: 'UAH' };
-
-            // Встановлення заголовків відповіді
-            response.setHeader('Content-Type', 'application/json');
-            response.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
-            response.setHeader('Access-Control-Allow-Credentials', 'true');
-
-            // Відправлення даних як відповідь на запит
-            response.write(JSON.stringify(currency));
-            response.end();
-        }
+        });
+    } catch (error) {
+        console.error(error);
+        res.status(400).send('Bad request');
     }
 });
 
-server.listen(4000, () => {
-    console.log('Server is running on port 4000');
+const port = 4000;
+app.listen(port, () => {
+    console.log(`Server is running on port ${port}`);
 });
+
+
+
+
+

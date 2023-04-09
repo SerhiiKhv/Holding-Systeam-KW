@@ -14,8 +14,6 @@ export const Enterprises = () => {
         dispatch(getEnterprise());
     }, []);
 
-
-    console.log(enterprise)
     return <div className={style.enterprise}>
         Enterprise:
 
@@ -24,7 +22,6 @@ export const Enterprises = () => {
                 enterprise.map((ent: any) => <Enterprise enterprise={ent}/>)
             }
         </div>
-
 
         <div>
             <AddEnterprise/>
