@@ -16,8 +16,6 @@ export const enterprisePageReducer = (state = initialState, action: ActionsTypes
     switch (action.type) {
         case 'SET_ENTERPRISE':
             return {...state, enterprise: action.enterprise}
-        case 'ADD_ENTERPRISE':
-            return {...state, enterprise: [...state.enterprise, action.enterprise]}
         default:
             return state;
     }
@@ -25,10 +23,7 @@ export const enterprisePageReducer = (state = initialState, action: ActionsTypes
 
 export const actions = {
     setEnterprise: (enterprise: Array<EnterpriseType>) =>
-        ({type: 'SET_ENTERPRISE', enterprise} as const),
-    addEnterpriseAction: (enterprise: EnterpriseType) =>
-        ({type: 'ADD_ENTERPRISE', enterprise} as const)
-
+        ({type: 'SET_ENTERPRISE', enterprise} as const)
 }
 
 export const getEnterprise = (): ThunkType => async (dispatch) => {
@@ -38,8 +33,6 @@ export const getEnterprise = (): ThunkType => async (dispatch) => {
 
 export const addEnterprise = (name: string, profit: number, dateOfCreation: string):
     ThunkType => async (dispatch) => {
-    //let enterprise = {name, profit, dateOfCreation}
-    //dispatch(actions.addEnterpriseAction(enterprise))
     await EnterpriseApi.postEnterprise(name, profit, dateOfCreation);
     await dispatch(getEnterprise());
 };

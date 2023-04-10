@@ -11,12 +11,17 @@
   },
   {
     "name": "GlobalIT",
-    "profit": 250,
-    "dateOfCreation": "10.12.2020"
+    "profit": 200,
+    "dateOfCreation": "30.12.2022"
   },
   {
-    "name": "Wer",
-    "profit": 150,
-    "dateOfCreation": "10.12.2019"
+    "name": "UA-IT",
+    "profit": 500,
+    "dateOfCreation": "04.01.2023"
+  },
+  {
+    "name": "My New Enterprise",
+    "profit": 500,
+    "dateOfCreation": "2022-04-09"
   }
 ]

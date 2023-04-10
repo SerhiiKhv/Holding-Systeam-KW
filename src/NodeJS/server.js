@@ -82,6 +82,49 @@ app.post('/enterprise', (req, res) => {
     }
 });
 
+app.put('/enterprise/:name', (req, res) => {
+    try {
+        const name = req.params.name;
+        const newEnterprise = req.body;
+
+        fs.readFile(enterprisesFilePath, (err, data) => {
+            if (err) {
+                console.error(err);
+                res.status(500).send('Internal server error');
+                return;
+            }
+
+            let enterprises = JSON.parse(data);
+
+            const enterpriseIndex = enterprises.findIndex((e) => e.name === name);
+
+            if (enterpriseIndex === -1) {
+                res.status(404).send('Enterprise not found');
+                return;
+            }
+
+            enterprises[enterpriseIndex] = { ...enterprises[enterpriseIndex], ...newEnterprise };
+
+            fs.writeFile(enterprisesFilePath, JSON.stringify(enterprises), (err) => {
+                if (err) {
+                    console.error(err);
+                    res.status(500).send('Internal server error');
+                    return;
+                }
+
+                res.setHeader('Content-Type', 'application/json');
+                res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
+                res.setHeader('Access-Control-Allow-Credentials', 'true');
+                res.sendStatus(200);
+            });
+        });
+    } catch (error) {
+        console.error(error);
+        res.status(400).send('Bad request');
+    }
+});
+
+
 const port = 4000;
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
