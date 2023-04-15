@@ -1,11 +1,22 @@
 const express = require('express');
+const bodyParser = require('body-parser');
 const fs = require('fs');
-
-
 const app = express();
-app.use(express.json());
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use((req, res, next) => {
+    res.header('Access-Control-Allow-Origin', 'http://localhost:3000'); // Додати домен, з якого дозволяється зробити запит
+    res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE'); // Додати список дозволених методів запиту
+    res.header('Access-Control-Allow-Headers', 'Content-Type'); // Додати список дозволених заголовків запиту
+    res.header('Access-Control-Allow-Credentials', 'true'); // Додати дозвіл на використання креденшалів
+    next();
+});
+
+
 
 const enterprisesFilePath = './DateJSON/Enterprises.json';
+
 
 app.get('/enterprise', (req, res) => {
     fs.readFile(enterprisesFilePath, (err, data) => {
@@ -30,22 +41,6 @@ app.get('/currency', (req, res) => {
     res.setHeader('Access-Control-Allow-Credentials', 'true');
     res.send(JSON.stringify(currency));
 });
-
-
-const bodyParser = require('body-parser');
-app.use(bodyParser.json());
-app.use((req, res, next) => {
-    let data = '';
-    req.setEncoding('utf8');
-    req.on('data', (chunk) => {
-        data += chunk;
-    });
-    req.on('end', () => {
-        req.body = JSON.parse(data);
-        next();
-    });
-});
-
 app.post('/enterprise', (req, res) => {
     try {
         const newEnterprise = req.body;
@@ -60,6 +55,10 @@ app.post('/enterprise', (req, res) => {
             const enterprises = JSON.parse(data);
 
             if (newEnterprise && Object.keys(newEnterprise).length > 0) {
+                // Генеруємо новий ідентифікатор (id) для нового підприємства
+                const id = Date.now();
+                newEnterprise.id = id;
+
                 enterprises.push(newEnterprise);
             }
 
@@ -82,9 +81,9 @@ app.post('/enterprise', (req, res) => {
     }
 });
 
-app.put('/enterprise/:name', (req, res) => {
+app.put('/enterprise/:id', (req, res) => {
     try {
-        const name = req.params.name;
+        const id = parseInt(req.params.id);
         const newEnterprise = req.body;
 
         fs.readFile(enterprisesFilePath, (err, data) => {
@@ -96,14 +95,14 @@ app.put('/enterprise/:name', (req, res) => {
 
             let enterprises = JSON.parse(data);
 
-            const enterpriseIndex = enterprises.findIndex((e) => e.name === name);
+            const enterpriseIndex = enterprises.findIndex((e) => e.id === id); // Знаходимо індекс підприємства за його id
 
             if (enterpriseIndex === -1) {
                 res.status(404).send('Enterprise not found');
                 return;
             }
 
-            enterprises[enterpriseIndex] = { ...enterprises[enterpriseIndex], ...newEnterprise };
+            enterprises[enterpriseIndex] = { ...enterprises[enterpriseIndex], ...newEnterprise }; // Замінюємо дані підприємства
 
             fs.writeFile(enterprisesFilePath, JSON.stringify(enterprises), (err) => {
                 if (err) {
@@ -124,13 +123,7 @@ app.put('/enterprise/:name', (req, res) => {
     }
 });
 
-
 const port = 4000;
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 });
-
-
-
-
-

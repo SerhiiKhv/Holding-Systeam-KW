@@ -16,7 +16,16 @@ export const EnterpriseApi = {
             profit,
             dateOfCreation
         };
-        console.log(data)
-        return instance.post<EnterpriseType>(`enterprise`, JSON.stringify(data)).then((res) => res.data);
+        return instance.post<EnterpriseType>(`enterprise`, data)
+            .then((res) => res.data);
+    },
+    putEnterprise(id: number, name: string, profit: number, dateOfCreation: string) {
+        const data = {
+            profit,
+            dateOfCreation
+        };
+
+        return instance.put(`enterprise/${id}`, data)
+            .then((res) => res.data);
     }
 }

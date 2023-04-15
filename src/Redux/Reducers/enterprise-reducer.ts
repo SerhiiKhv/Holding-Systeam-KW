@@ -36,3 +36,9 @@ export const addEnterprise = (name: string, profit: number, dateOfCreation: stri
     await EnterpriseApi.postEnterprise(name, profit, dateOfCreation);
     await dispatch(getEnterprise());
 };
+
+export const changeEnterprise = (id:number, name: string, profit: number, dateOfCreation: string):
+    ThunkType => async (dispatch) => {
+    await EnterpriseApi.putEnterprise(id, name, profit, dateOfCreation);
+    await dispatch(getEnterprise());
+};

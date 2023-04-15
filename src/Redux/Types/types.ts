@@ -6,7 +6,8 @@ export type CompanyType = {
 export type EnterpriseType = {
     name: string,
     profit: number,
-    dateOfCreation: string
+    dateOfCreation: string,
+    id: number
 }
 
 export type FinancialReportType = {

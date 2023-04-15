@@ -1,7 +1,8 @@
 import React, {useState} from "react";
 import {Field, Formik} from "formik";
-import {addEnterprise} from "../../../Redux/Reducers/enterprise-reducer";
+import {addEnterprise} from "../../../../Redux/Reducers/enterprise-reducer";
 import {useDispatch} from "react-redux";
+import style from "../Enterprise.module.css";
 
 export const AddEnterprise = () => {
 
@@ -42,15 +43,15 @@ export const AddEnterprise = () => {
                 <form onSubmit={handleSubmit}>
                     <Field
                         value={name} onChange={onNameChange}
-                        type='text' name='name' />
+                        type='text' name='name' className={style.inputField}/>
                     <Field
                         value={profit} onChange={onProfitChange}
-                        type='number' name='profit' />
+                        type='number' name='profit' className={style.inputField}/>
                     <Field
                         value={dateOfCreation} onChange={onDateOfCreationChange}
-                        type='text' name='dateOfCreation' />
+                        type='text' name='dateOfCreation' className={style.inputField}/>
 
-                    <button type="submit">
+                    <button type="submit" className={style.button}>
                         Submit
                     </button>
                 </form>

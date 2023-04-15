@@ -5,10 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b65767a5-3ac5-48eb-8066-f803a31a0157" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Component/Content/Enterprise/actionsOnEnterprise/changeEnterprise.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Api/Api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Api/Api.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/Content/Enterprise/AddEnterprise.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/Enterprise/actionsOnEnterprise/AddEnterprise.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/Content/Enterprise/Enterprise.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/Enterprise/Enterprise.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/Content/Enterprise/Enterprises.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/Enterprise/Enterprises.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/NodeJS/DateJSON/Enterprises.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/NodeJS/DateJSON/Enterprises.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/NodeJS/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/NodeJS/server.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Redux/Reducers/enterprise-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Reducers/enterprise-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/Types/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Types/types.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,10 +27,10 @@
       <list>
         <option value="SCSS File" />
         <option value="Sass File" />
-        <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
         <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -51,6 +58,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2O0dddwHqn5PCGSQlHqVcAwbEt3" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -67,8 +77,10 @@
     &quot;last_opened_file_path&quot;: &quot;E:/Навчання/Курсові/Курсова 6 семестр/cod&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;Sass&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
@@ -84,11 +96,11 @@
       <recent name="E:\Навчання\Курсові\Курсова 6 семестр\cod\src\Component" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Навчання\Курсові\Курсова 6 семестр\cod\src\Component\Content\Enterprise\actionsOnEnterprise" />
       <recent name="E:\Навчання\Курсові\Курсова 6 семестр\cod\src\NodeJS\Test" />
       <recent name="E:\Навчання\Курсові\Курсова 6 семестр\cod\src\NodeJS" />
       <recent name="E:\Навчання\Курсові\Курсова 6 семестр\cod\src\Redux\DateJSON" />
       <recent name="E:\Навчання\Курсові\Курсова 6 семестр\cod\src\Redux\Reducers" />
-      <recent name="E:\Навчання\Курсові\Курсова 6 семестр\cod\src\Redux" />
     </key>
   </component>
   <component name="RunManager" selected="Node.js.server.js">
@@ -133,7 +145,10 @@
       <workItem from="1681064617508" duration="839000" />
       <workItem from="1681071780075" duration="2208000" />
       <workItem from="1681129558738" duration="888000" />
-      <workItem from="1681155209497" duration="804000" />
+      <workItem from="1681155209497" duration="1628000" />
+      <workItem from="1681215558912" duration="4854000" />
+      <workItem from="1681385685970" duration="5786000" />
+      <workItem from="1681564011818" duration="6893000" />
     </task>
     <task id="LOCAL-00001" summary="Start">
       <created>1680701964809</created>
@@ -205,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681074007164</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Added Api(put) for Enterprises">
+      <created>1681156212048</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1681156212048</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,6 +244,7 @@
     <MESSAGE value="I keep progress" />
     <MESSAGE value="Added Api(get) for Enterprises" />
     <MESSAGE value="Added Api(post) for Enterprises" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Api(post) for Enterprises" />
+    <MESSAGE value="Added Api(put) for Enterprises" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Api(put) for Enterprises" />
   </component>
 </project>
