@@ -37,8 +37,14 @@ export const addEnterprise = (name: string, profit: number, dateOfCreation: stri
     await dispatch(getEnterprise());
 };
 
-export const changeEnterprise = (id:number, name: string, profit: number, dateOfCreation: string):
+export const changeEnterprise = (id: number, name: string, profit: number, dateOfCreation: string):
     ThunkType => async (dispatch) => {
     await EnterpriseApi.putEnterprise(id, name, profit, dateOfCreation);
+    await dispatch(getEnterprise());
+};
+
+export const destroyEnterprise = (id: number):
+    ThunkType => async (dispatch) => {
+    await EnterpriseApi.deleteEnterprise(id);
     await dispatch(getEnterprise());
 };

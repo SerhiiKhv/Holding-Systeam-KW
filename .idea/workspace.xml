@@ -5,17 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b65767a5-3ac5-48eb-8066-f803a31a0157" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Component/Content/Enterprise/actionsOnEnterprise/changeEnterprise.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Component/Content/Enterprise/actionsOnEnterprise/DeleteEnterprice.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/validators/validators.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Api/Api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Api/Api.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Content/Enterprise/AddEnterprise.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/Enterprise/actionsOnEnterprise/AddEnterprise.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Content/Enterprise/Enterprise.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/Enterprise/Enterprise.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Component/Content/Enterprise/Enterprises.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/Enterprise/Enterprises.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/Content/Enterprise/actionsOnEnterprise/AddEnterprise.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/Enterprise/actionsOnEnterprise/AddEnterprise.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/Content/Enterprise/actionsOnEnterprise/changeEnterprise.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/Enterprise/actionsOnEnterprise/changeEnterprise.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/NodeJS/DateJSON/Enterprises.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/NodeJS/DateJSON/Enterprises.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/NodeJS/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/NodeJS/server.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Redux/Reducers/enterprise-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Reducers/enterprise-reducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/Types/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Types/types.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,28 +65,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;18.15.0&quot;,
-    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;18.15.0&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/Навчання/Курсові/Курсова 6 семестр/cod&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;Sass&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;E:\\Навчання\\Курсові\\Курсова 6 семестр\\cod\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "javascript.nodejs.core.library.configured.version": "18.15.0",
+    "javascript.nodejs.core.library.typings.version": "18.15.0",
+    "last_opened_file_path": "D:/IT/newreact",
+    "list.type.of.created.stylesheet": "Sass",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_interpreter_path": "node",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "E:\\Навчання\\Курсові\\Курсова 6 семестр\\cod\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Навчання\Курсові\Курсова 6 семестр\cod\src\Redux" />
@@ -148,7 +147,9 @@
       <workItem from="1681155209497" duration="1628000" />
       <workItem from="1681215558912" duration="4854000" />
       <workItem from="1681385685970" duration="5786000" />
-      <workItem from="1681564011818" duration="6893000" />
+      <workItem from="1681564011818" duration="7160000" />
+      <workItem from="1681639547293" duration="2438000" />
+      <workItem from="1681663158850" duration="3813000" />
     </task>
     <task id="LOCAL-00001" summary="Start">
       <created>1680701964809</created>
@@ -227,7 +228,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681156212048</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Updated API(put) for enterprises, but there are still bugs">
+      <created>1681571240699</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1681571240699</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -245,6 +253,7 @@
     <MESSAGE value="Added Api(get) for Enterprises" />
     <MESSAGE value="Added Api(post) for Enterprises" />
     <MESSAGE value="Added Api(put) for Enterprises" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Api(put) for Enterprises" />
+    <MESSAGE value="Updated API(put) for enterprises, but there are still bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated API(put) for enterprises, but there are still bugs" />
   </component>
 </project>

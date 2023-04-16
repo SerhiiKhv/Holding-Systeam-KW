@@ -38,8 +38,8 @@ export const AddEnterprise = () => {
             onSubmit={submit}
         >
             {({
-                 handleSubmit
-              }) => (
+                  handleSubmit
+            }) => (
                 <form onSubmit={handleSubmit}>
                     <Field
                         value={name} onChange={onNameChange}

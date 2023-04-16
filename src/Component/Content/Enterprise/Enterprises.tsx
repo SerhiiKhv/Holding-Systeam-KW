@@ -6,6 +6,7 @@ import style from "./Enterprise.module.css";
 import {AddEnterprise} from "./actionsOnEnterprise/AddEnterprise";
 import {getEnterprise} from "../../../Redux/Reducers/enterprise-reducer";
 import {ChangeEnterprise} from "./actionsOnEnterprise/changeEnterprise";
+import {DeleteEnterprise} from "./actionsOnEnterprise/DeleteEnterprice";
 
 export const Enterprises = () => {
     const dispatch = useDispatch();
@@ -32,6 +33,10 @@ export const Enterprises = () => {
         <div>
             <h3>Змінити дані існуючого підприємства:</h3>
             <ChangeEnterprise/>
+        </div>
+        <div>
+            <h3>Видалити існуюче підприємства:</h3>
+            <DeleteEnterprise/>
         </div>
     </div>
 }

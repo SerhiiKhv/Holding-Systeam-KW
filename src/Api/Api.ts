@@ -27,5 +27,9 @@ export const EnterpriseApi = {
 
         return instance.put(`enterprise/${id}`, data)
             .then((res) => res.data);
+    },
+    deleteEnterprise(id: number){
+        return instance.delete(`enterprise/${id}`)
+            .then((res) => res.data);
     }
 }

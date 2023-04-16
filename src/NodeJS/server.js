@@ -13,10 +13,7 @@ app.use((req, res, next) => {
     next();
 });
 
-
-
 const enterprisesFilePath = './DateJSON/Enterprises.json';
-
 
 app.get('/enterprise', (req, res) => {
     fs.readFile(enterprisesFilePath, (err, data) => {
@@ -103,6 +100,47 @@ app.put('/enterprise/:id', (req, res) => {
             }
 
             enterprises[enterpriseIndex] = { ...enterprises[enterpriseIndex], ...newEnterprise }; // Замінюємо дані підприємства
+
+            fs.writeFile(enterprisesFilePath, JSON.stringify(enterprises), (err) => {
+                if (err) {
+                    console.error(err);
+                    res.status(500).send('Internal server error');
+                    return;
+                }
+
+                res.setHeader('Content-Type', 'application/json');
+                res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
+                res.setHeader('Access-Control-Allow-Credentials', 'true');
+                res.sendStatus(200);
+            });
+        });
+    } catch (error) {
+        console.error(error);
+        res.status(400).send('Bad request');
+    }
+});
+
+app.delete('/enterprise/:id', (req, res) => {
+    try {
+        const id = parseInt(req.params.id);
+
+        fs.readFile(enterprisesFilePath, (err, data) => {
+            if (err) {
+                console.error(err);
+                res.status(500).send('Internal server error');
+                return;
+            }
+
+            let enterprises = JSON.parse(data);
+
+            const enterpriseIndex = enterprises.findIndex((e) => e.id === id); // Знаходимо індекс підприємства за його id
+
+            if (enterpriseIndex === -1) {
+                res.status(404).send('Enterprise not found');
+                return;
+            }
+
+            enterprises.splice(enterpriseIndex, 1); // Видаляємо підприємство з масиву
 
             fs.writeFile(enterprisesFilePath, JSON.stringify(enterprises), (err) => {
                 if (err) {
