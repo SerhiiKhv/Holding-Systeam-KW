@@ -5,16 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b65767a5-3ac5-48eb-8066-f803a31a0157" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Component/Content/Enterprise/actionsOnEnterprise/DeleteEnterprice.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/validators/validators.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/NodeJS/RequestsType/enterpriseRequest.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Api/Api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Api/Api.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Content/Enterprise/Enterprises.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/Enterprise/Enterprises.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Content/Enterprise/actionsOnEnterprise/AddEnterprise.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/Enterprise/actionsOnEnterprise/AddEnterprise.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Content/Enterprise/actionsOnEnterprise/changeEnterprise.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/Enterprise/actionsOnEnterprise/changeEnterprise.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NodeJS/DateJSON/Enterprises.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/NodeJS/DateJSON/Enterprises.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/NodeJS/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/NodeJS/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/Reducers/enterprise-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Reducers/enterprise-reducer.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,9 +20,9 @@
         <option value="SCSS File" />
         <option value="Sass File" />
         <option value="TypeScript File" />
-        <option value="JavaScript File" />
         <option value="HTML File" />
         <option value="TypeScript JSX File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -95,11 +88,11 @@
       <recent name="E:\Навчання\Курсові\Курсова 6 семестр\cod\src\Component" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Навчання\Курсові\Курсова 6 семестр\cod\src\NodeJS\RequestsType" />
       <recent name="E:\Навчання\Курсові\Курсова 6 семестр\cod\src\Component\Content\Enterprise\actionsOnEnterprise" />
       <recent name="E:\Навчання\Курсові\Курсова 6 семестр\cod\src\NodeJS\Test" />
       <recent name="E:\Навчання\Курсові\Курсова 6 семестр\cod\src\NodeJS" />
       <recent name="E:\Навчання\Курсові\Курсова 6 семестр\cod\src\Redux\DateJSON" />
-      <recent name="E:\Навчання\Курсові\Курсова 6 семестр\cod\src\Redux\Reducers" />
     </key>
   </component>
   <component name="RunManager" selected="Node.js.server.js">
@@ -149,7 +142,7 @@
       <workItem from="1681385685970" duration="5786000" />
       <workItem from="1681564011818" duration="7160000" />
       <workItem from="1681639547293" duration="2438000" />
-      <workItem from="1681663158850" duration="3813000" />
+      <workItem from="1681663158850" duration="4784000" />
     </task>
     <task id="LOCAL-00001" summary="Start">
       <created>1680701964809</created>
@@ -235,7 +228,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681571240699</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Added delete for enterprises">
+      <created>1681667153175</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1681667153175</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -254,6 +254,7 @@
     <MESSAGE value="Added Api(post) for Enterprises" />
     <MESSAGE value="Added Api(put) for Enterprises" />
     <MESSAGE value="Updated API(put) for enterprises, but there are still bugs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated API(put) for enterprises, but there are still bugs" />
+    <MESSAGE value="Added delete for enterprises" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added delete for enterprises" />
   </component>
 </project>
