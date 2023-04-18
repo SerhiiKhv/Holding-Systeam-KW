@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const enterpriseRouter = require('./RequestsType/enterpriseRequest'); // Імпортуйте роутер з окремого файлу
+const enterpriseRouter = require('./RequestsType/enterpriseRequest');
+const companyRouter = require('./RequestsType/companyRequest');
 const app = express();
 
 app.use(bodyParser.json());
@@ -14,6 +15,7 @@ app.use((req, res, next) => {
 });
 
 app.use('/enterprise', enterpriseRouter);
+app.use('/company', companyRouter);
 
 app.get('/currency', (req, res) => {
     const currency = { name: 'UAH' };

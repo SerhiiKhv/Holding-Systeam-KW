@@ -2,10 +2,12 @@ import {Action, applyMiddleware, combineReducers, compose, createStore, Store} f
 import thunkMiddleware, {ThunkAction} from "redux-thunk";
 import {appReducer} from "./app-reducer";
 import {enterprisePageReducer} from "./Reducers/enterprise-reducer";
+import {companyPageReducer} from "./Reducers/company-reducer";
 
 let reducers = combineReducers({
     app: appReducer,
-    enterprise: enterprisePageReducer
+    enterprise: enterprisePageReducer,
+    company: companyPageReducer
 });
 
 type RootReducerType = typeof reducers;

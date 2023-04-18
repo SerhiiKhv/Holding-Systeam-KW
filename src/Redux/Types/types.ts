@@ -1,6 +1,7 @@
 export type CompanyType = {
     name: string,
-    Enterprise: Array<EnterpriseType>
+    enterprises: Array<string>,
+    id: number
 }
 
 export type EnterpriseType = {
@@ -14,5 +15,6 @@ export type FinancialReportType = {
     name: string,
     profit: number,
     startDate: string,
-    endDate: string
+    endDate: string,
+    id: number
 }

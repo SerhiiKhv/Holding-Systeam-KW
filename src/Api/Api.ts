@@ -8,7 +8,8 @@ const instance = axios.create({
 
 export const EnterpriseApi = {
     getEntries() {
-        return instance.get<EnterpriseType[]>(`enterprise`).then(res => res.data);
+        return instance.get<EnterpriseType[]>(`enterprise`)
+            .then(res => res.data);
     },
     postEnterprise(name: string, profit: number, dateOfCreation: string) {
         const data = {
@@ -31,5 +32,28 @@ export const EnterpriseApi = {
     deleteEnterprise(id: number){
         return instance.delete(`enterprise/${id}`)
             .then((res) => res.data);
+    }
+}
+
+export const CompanyApi = {
+    getCompany(){
+        return instance.get('company')
+            .then((res) => res.data)
+    },
+    postCompany(name: string, enterprises: []){
+        const data ={
+            name,
+            enterprises
+        }
+        return instance.post('company', data)
+            .then((res) => res.data)
+    },
+    putCompany(id: number, name: string, enterprises: []){
+        return instance.put(`company/${id}`)
+            .then((res) => res.data)
+    },
+    deleteCompany(id: number){
+        return instance.delete(`company/${id}`)
+            .then((res) => res.data)
     }
 }
