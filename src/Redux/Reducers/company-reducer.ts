@@ -30,13 +30,13 @@ export const getCompany = (): ThunkType => async (dispatch) => {
     dispatch(actions.setCompany(data));
 }
 
-export const addCompany = (name: string, enterprises: []):
+export const addCompany = (name: string, enterprises: Array<string>):
     ThunkType => async (dispatch) => {
     await CompanyApi.postCompany(name, enterprises);
     await dispatch(getCompany());
 };
 
-export const changeCompany = (id: number, name: string, enterprises: []):
+export const changeCompany = (id: number, name: string, enterprises: Array<string>):
     ThunkType => async (dispatch) => {
     await CompanyApi.putCompany(id, name, enterprises);
     await dispatch(getCompany());

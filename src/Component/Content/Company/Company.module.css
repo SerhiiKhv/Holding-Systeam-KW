@@ -1,6 +1,49 @@
 .companys{
-    margin-left: 10px;
+    padding: 20px;
+    display: flex;
 }
 .company{
-    margin-top: 10px;
+    padding: 20px;
+    overflow: auto;
+}
+
+.companys > div:first-child {
+    flex: 1;
+}
+
+.companys > div:last-child {
+    flex: 2;
+    margin-left: 50px;
+}
+
+
+.inputField {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+}
+
+.button {
+    padding: 10px;
+    color: black;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.CompanyNameList{
+    height: 100px;
+    overflow: auto;
+    margin: 10px;
+}
+
+.CompanyList{
+    height: 600px;
+    overflow: auto;
+    margin: 10px;
 }

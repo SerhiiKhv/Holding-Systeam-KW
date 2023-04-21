@@ -40,7 +40,7 @@ export const CompanyApi = {
         return instance.get('company')
             .then((res) => res.data)
     },
-    postCompany(name: string, enterprises: []){
+    postCompany(name: string, enterprises: Array<string>){
         const data ={
             name,
             enterprises
@@ -48,8 +48,12 @@ export const CompanyApi = {
         return instance.post('company', data)
             .then((res) => res.data)
     },
-    putCompany(id: number, name: string, enterprises: []){
-        return instance.put(`company/${id}`)
+    putCompany(id: number, name: string, enterprises: Array<string>){
+        const data ={
+            name,
+            enterprises
+        }
+        return instance.put(`company/${id}`, data)
             .then((res) => res.data)
     },
     deleteCompany(id: number){

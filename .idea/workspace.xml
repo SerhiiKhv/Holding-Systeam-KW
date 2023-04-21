@@ -5,24 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b65767a5-3ac5-48eb-8066-f803a31a0157" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Component/Content/Company/Company.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Component/Content/Company/Companys.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Component/Content/Company/actionsOnCompany/AddCompany.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Component/Content/Company/actionsOnCompany/ChangeCompany.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Component/Content/Company/actionsOnCompany/DeleteCompany.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NodeJS/DateJSON/Company.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NodeJS/RequestsType/companyRequest.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/Reducers/company-reducer.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/selector/company-selector.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Api/Api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Api/Api.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Content/Company/Company.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/Company/Company.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NodeJS/DateJSON/Enterprises.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/NodeJS/DateJSON/Enterprises.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NodeJS/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/NodeJS/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/Types/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Types/types.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/redux-store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/redux-store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/Content/Company/Company.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/Company/Company.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/Content/Company/Companys.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/Company/Companys.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/Content/Company/actionsOnCompany/AddCompany.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/Company/actionsOnCompany/AddCompany.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NodeJS/DateJSON/Company.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/NodeJS/DateJSON/Company.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/Reducers/company-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Reducers/company-reducer.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,28 +64,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "javascript.nodejs.core.library.configured.version": "18.15.0",
-    "javascript.nodejs.core.library.typings.version": "18.15.0",
-    "last_opened_file_path": "D:/IT/newreact",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "node",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "E:\\Навчання\\Курсові\\Курсова 6 семестр\\cod\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;18.15.0&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;18.15.0&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/IT/newreact&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;E:\\Навчання\\Курсові\\Курсова 6 семестр\\cod\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Навчання\Курсові\Курсова 6 семестр\cod\src\Redux" />
@@ -160,7 +150,8 @@
       <workItem from="1681639547293" duration="2438000" />
       <workItem from="1681663158850" duration="4828000" />
       <workItem from="1681745580619" duration="2291000" />
-      <workItem from="1681835462866" duration="2434000" />
+      <workItem from="1681835462866" duration="2713000" />
+      <workItem from="1682069760136" duration="6987000" />
     </task>
     <task id="LOCAL-00001" summary="Start">
       <created>1680701964809</created>
@@ -260,7 +251,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681668056194</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Added company (server, API, Redux, interface blank)">
+      <created>1681838089483</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1681838089483</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -281,6 +279,7 @@
     <MESSAGE value="Updated API(put) for enterprises, but there are still bugs" />
     <MESSAGE value="Added delete for enterprises" />
     <MESSAGE value="Improved server" />
-    <option name="LAST_COMMIT_MESSAGE" value="Improved server" />
+    <MESSAGE value="Added company (server, API, Redux, interface blank)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added company (server, API, Redux, interface blank)" />
   </component>
 </project>
