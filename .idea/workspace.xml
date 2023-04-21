@@ -5,14 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b65767a5-3ac5-48eb-8066-f803a31a0157" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Api/Api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Api/Api.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Content/Company/Company.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/Company/Company.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Component/Content/Company/Companys.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/Company/Companys.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Component/Content/Company/actionsOnCompany/AddCompany.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/Company/actionsOnCompany/AddCompany.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/Content/Company/actionsOnCompany/ChangeCompany.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/Company/actionsOnCompany/ChangeCompany.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/NodeJS/DateJSON/Company.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/NodeJS/DateJSON/Company.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/Reducers/company-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Reducers/company-reducer.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +98,7 @@
       <recent name="E:\Навчання\Курсові\Курсова 6 семестр\cod\src\Redux\DateJSON" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.npm start">
+  <component name="RunManager" selected="Node.js.server.js">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
       <method v="2" />
     </configuration>
@@ -151,7 +148,7 @@
       <workItem from="1681663158850" duration="4828000" />
       <workItem from="1681745580619" duration="2291000" />
       <workItem from="1681835462866" duration="2713000" />
-      <workItem from="1682069760136" duration="6987000" />
+      <workItem from="1682069760136" duration="13707000" />
     </task>
     <task id="LOCAL-00001" summary="Start">
       <created>1680701964809</created>
@@ -258,7 +255,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681838089483</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Added company (post)">
+      <created>1682077245854</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1682077245854</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -280,6 +284,7 @@
     <MESSAGE value="Added delete for enterprises" />
     <MESSAGE value="Improved server" />
     <MESSAGE value="Added company (server, API, Redux, interface blank)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added company (server, API, Redux, interface blank)" />
+    <MESSAGE value="Added company (post)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added company (post)" />
   </component>
 </project>

@@ -2,17 +2,28 @@
   {
     "name": "IT-UA",
     "enterprises": [
-      "IT-pro",
       "Unit",
-      "UA-Word"
+      "IT-pro",
+      "GlobalIT"
     ],
     "id": 1682034129867
   },
   {
-    "name": "IT-Word",
+    "name": "Word-IT",
     "enterprises": [
+      "IT-pro",
+      "Unit",
       "GlobalIT"
     ],
-    "id": 1682072189867
+    "id": 1682090699626
+  },
+  {
+    "name": "Alamay",
+    "enterprises": [
+      "GlobalIT",
+      "My New Enterprise",
+      "UA-Word"
+    ],
+    "id": 1682090708386
   }
 ]

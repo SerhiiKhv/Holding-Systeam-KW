@@ -12,7 +12,6 @@ import style from "./Company.module.css"
 export const Companys = () => {
 
     const company = useSelector(getCompanySelector)
-
     const dispatch = useDispatch();
 
     useEffect(() => {

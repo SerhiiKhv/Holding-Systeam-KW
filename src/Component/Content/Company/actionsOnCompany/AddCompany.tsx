@@ -14,7 +14,7 @@ export const AddCompanys = () => {
         dispatch(getEnterprise());
     }, []);
 
-    const submit = (values: {name: string, enterprises: Array<string>}) => {
+    const submit = (values: { name: string, enterprises: Array<string> }) => {
         dispatch(addCompany(values.name, values.enterprises));
         values.name = "";
         values.enterprises = [];
@@ -24,7 +24,7 @@ export const AddCompanys = () => {
         return (
             <div key={d.id}>
                 <label>
-                    <Field type="checkbox" name="enterprises" value={d.name} />
+                    <Field type="checkbox" name="enterprises" value={d.name}/>
                     {d.name}
                 </label>
             </div>
@@ -34,10 +34,10 @@ export const AddCompanys = () => {
     return (
         <div>
             <Formik
-                initialValues={{ name: "", enterprises: [] }}
+                initialValues={{name: "", enterprises: []}}
                 onSubmit={submit}
             >
-                {({ values, handleSubmit }) => (
+                {({values, handleSubmit}) => (
                     <form onSubmit={handleSubmit}>
                         <Field
                             type="text"
@@ -54,7 +54,6 @@ export const AddCompanys = () => {
                         <button type="submit" className={style.button}>
                             Submit
                         </button>
-                        <pre>{JSON.stringify(values, null, 2)}</pre>
                     </form>
                 )}
             </Formik>
