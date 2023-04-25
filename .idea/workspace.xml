@@ -5,11 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b65767a5-3ac5-48eb-8066-f803a31a0157" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Component/Content/FinancialReport/FinancialReport.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Component/Content/FinancialReport/FinancialReports.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Component/Content/FinancialReport/actionsOnFinancialReport/AddFinancialReport.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Component/Content/FinancialReport/actionsOnFinancialReport/ChangeFinancialReport.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Component/Content/FinancialReport/actionsOnFinancialReport/DeleteFinancialReport.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/NodeJS/DateJSON/FinancialReport.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/NodeJS/RequestsType/financialReportRequest.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Redux/Reducers/financialReport-reducer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Redux/selector/financialReport-selector.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Content/Company/Companys.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/Company/Companys.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Content/Company/actionsOnCompany/AddCompany.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/Company/actionsOnCompany/AddCompany.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Api/Api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Api/Api.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Component/Content/Company/actionsOnCompany/ChangeCompany.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/Company/actionsOnCompany/ChangeCompany.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NodeJS/DateJSON/Company.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/NodeJS/DateJSON/Company.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/Content/FinancialReport/FinancialReport.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/FinancialReport/FinancialReport.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NodeJS/DateJSON/Enterprises.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/NodeJS/DateJSON/Enterprises.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NodeJS/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/NodeJS/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/Types/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Types/types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/redux-store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/redux-store.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,10 +35,10 @@
         <option value="SCSS File" />
         <option value="HTML File" />
         <option value="JavaScript File" />
-        <option value="TypeScript JSX File" />
-        <option value="TypeScript File" />
         <option value="Sass File" />
+        <option value="TypeScript File" />
         <option value="CSS File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -61,30 +74,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;18.15.0&quot;,
-    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;18.15.0&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/IT/newreact&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;E:\\Навчання\\Курсові\\Курсова 6 семестр\\cod\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "javascript.nodejs.core.library.configured.version": "18.15.0",
+    "javascript.nodejs.core.library.typings.version": "18.15.0",
+    "last_opened_file_path": "E:/Навчання/Курсові/Курсова 6 семестр/cod/src/NodeJS/RequestsType",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_interpreter_path": "node",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "E:\\Навчання\\Курсові\\Курсова 6 семестр\\cod\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Навчання\Курсові\Курсова 6 семестр\cod\src\NodeJS\RequestsType" />
       <recent name="E:\Навчання\Курсові\Курсова 6 семестр\cod\src\Redux" />
       <recent name="E:\Навчання\Курсові\Курсова 6 семестр\cod\src\NodeJS\DateJSON" />
       <recent name="E:\Навчання\Курсові\Курсова 6 семестр\cod\src" />
@@ -148,7 +162,9 @@
       <workItem from="1681663158850" duration="4828000" />
       <workItem from="1681745580619" duration="2291000" />
       <workItem from="1681835462866" duration="2713000" />
-      <workItem from="1682069760136" duration="13707000" />
+      <workItem from="1682069760136" duration="14677000" />
+      <workItem from="1682360272073" duration="24000" />
+      <workItem from="1682423820432" duration="2666000" />
     </task>
     <task id="LOCAL-00001" summary="Start">
       <created>1680701964809</created>
@@ -262,7 +278,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682077245854</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Added company (put and delete)">
+      <created>1682090764484</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1682090764484</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -285,6 +308,7 @@
     <MESSAGE value="Improved server" />
     <MESSAGE value="Added company (server, API, Redux, interface blank)" />
     <MESSAGE value="Added company (post)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added company (post)" />
+    <MESSAGE value="Added company (put and delete)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added company (put and delete)" />
   </component>
 </project>

@@ -14,7 +14,8 @@ export type EnterpriseType = {
 export type FinancialReportType = {
     name: string,
     profit: number,
-    startDate: string,
-    endDate: string,
-    id: number
+    dateOfStart: string,
+    dateOfEnd: string,
+    id: number,
+    isFixed: "true" | "false"
 }

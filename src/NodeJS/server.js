@@ -2,6 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const enterpriseRouter = require('./RequestsType/enterpriseRequest');
 const companyRouter = require('./RequestsType/companyRequest');
+const financialReportRouter = require('./RequestsType/financialReportRequest');
 const app = express();
 
 app.use(bodyParser.json());
@@ -16,6 +17,7 @@ app.use((req, res, next) => {
 
 app.use('/enterprise', enterpriseRouter);
 app.use('/company', companyRouter);
+app.use('/financialReport', financialReportRouter);
 
 app.get('/currency', (req, res) => {
     const currency = { name: 'UAH' };

@@ -20,10 +20,6 @@ export const ChangeCompanys = () => {
         dispatch(getEnterprise());
     }, []);
     const submit = () => {
-        console.log(id)
-        console.log(name)
-        console.log(enterprises)
-
         dispatch(changeCompany(id, name, enterprises));
         setName('');
         setEnterprises([]);

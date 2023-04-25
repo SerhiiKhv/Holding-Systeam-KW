@@ -3,11 +3,13 @@ import thunkMiddleware, {ThunkAction} from "redux-thunk";
 import {appReducer} from "./app-reducer";
 import {enterprisePageReducer} from "./Reducers/enterprise-reducer";
 import {companyPageReducer} from "./Reducers/company-reducer";
+import {financialReportPageReducer} from "./Reducers/financialReport-reducer";
 
 let reducers = combineReducers({
     app: appReducer,
     enterprise: enterprisePageReducer,
-    company: companyPageReducer
+    company: companyPageReducer,
+    financialReport: financialReportPageReducer
 });
 
 type RootReducerType = typeof reducers;

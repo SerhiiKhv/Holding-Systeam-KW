@@ -34,7 +34,6 @@ export const EnterpriseApi = {
             .then((res) => res.data);
     }
 }
-
 export const CompanyApi = {
     getCompany(){
         return instance.get('company')
@@ -58,6 +57,49 @@ export const CompanyApi = {
     },
     deleteCompany(id: number){
         return instance.delete(`company/${id}`)
+            .then((res) => res.data)
+    }
+}
+
+
+export const FinancialReportApi = {
+    getFinancialReport(){
+        return instance.get('financialReport')
+            .then((res) => res.data)
+    },
+    postFinancialReport(name: string,
+                        profit: number,
+                        dateOfStart: string,
+                        dateOfEnd: string,
+                        isFixed: "true" | "false"){
+        const data ={
+            name,
+            profit,
+            dateOfStart,
+            dateOfEnd,
+            isFixed
+        }
+        return instance.post('financialReport', data)
+            .then((res) => res.data)
+    },
+    putFinancialReport(id: number,
+                       name: string,
+                       profit: number,
+                       dateOfStart: string,
+                       dateOfEnd: string,
+                       isFixed: "true" | "false"){
+        const data ={
+            name,
+            profit,
+            dateOfStart,
+            dateOfEnd,
+            isFixed
+        }
+        return instance.put(`financialReport/${id}`, data)
+            .then((res) => res.data)
+    },
+    deleteFinancialReport(id: number){
+        return instance.delete(`financialReport/${id}`)
             .then((res) => res.data)
     }
 }

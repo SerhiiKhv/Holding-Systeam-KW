@@ -1,0 +1,5 @@
+.FinancialReportList{
+    height: 600px;
+    overflow: auto;
+    margin: 10px;
+}
