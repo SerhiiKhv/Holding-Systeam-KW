@@ -3,3 +3,36 @@
     overflow: auto;
     margin: 10px;
 }
+
+.financialReport{
+    padding: 20px;
+    display: flex;
+}
+
+.financialReport > div:first-child {
+    flex: 1;
+}
+
+.financialReport > div:last-child {
+    flex: 2;
+    margin-left: 50px;
+}
+
+.inputField {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+}
+
+.button {
+    padding: 10px;
+    color: black;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}

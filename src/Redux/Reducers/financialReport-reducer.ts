@@ -31,7 +31,7 @@ export const getFinancialReport = (): ThunkType => async (dispatch) => {
     dispatch(actions.setFinancialReport(data));
 }
 
-export const addEnterprise = (name: string,
+export const addFinancialReport = (name: string,
                               profit: number,
                               dateOfStart: string,
                               dateOfEnd: string,

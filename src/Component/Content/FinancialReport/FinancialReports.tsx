@@ -19,7 +19,7 @@ export const FinancialReports = () => {
         dispatch(getFinancialReport())
     }, [])
 
-    return <div>
+    return <div className={style.financialReport}>
         FinancialReport:
 
         <div className={style.FinancialReportList}>
@@ -28,8 +28,16 @@ export const FinancialReports = () => {
             }
         </div>
 
-        <AddFinancialReport/>
-        <ChangeFinancialReport/>
-        <DeleteFinancialReport/>
+        <div>
+            <AddFinancialReport/>
+        </div>
+
+        <div>
+            <ChangeFinancialReport/>
+        </div>
+
+        <div>
+            <DeleteFinancialReport/>
+        </div>
     </div>
 }
