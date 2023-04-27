@@ -1,10 +1,1 @@
-[
-  {
-    "name": "IT-pro",
-    "profit": 300,
-    "dateOfStart": "10.10.2020",
-    "dateOfEnd": "10.10.2021",
-    "isFixed": "false",
-    "id": 1
-  }
-]
+[{"name":"IT-pro","profit":300,"dateOfStart":"10.10.2020","dateOfEnd":"10.10.2021","isFixed":"true","id":1},{"name":"Unit","profit":500,"dateOfStart":"01.01.2022","dateOfEnd":"01.01.2023","isFixed":"false","id":1682595685944}]

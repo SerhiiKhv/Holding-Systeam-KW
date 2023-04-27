@@ -8,6 +8,7 @@ import style from "./FinancialReport.module.css";
 import {AddFinancialReport} from "./actionsOnFinancialReport/AddFinancialReport";
 import {ChangeFinancialReport} from "./actionsOnFinancialReport/ChangeFinancialReport";
 import {DeleteFinancialReport} from "./actionsOnFinancialReport/DeleteFinancialReport";
+import {FixedFinancialReport} from "./actionsOnFinancialReport/FixedFinancialReport";
 
 export const FinancialReports = () => {
 
@@ -38,6 +39,10 @@ export const FinancialReports = () => {
 
         <div>
             <DeleteFinancialReport/>
+        </div>
+
+        <div>
+            <FixedFinancialReport/>
         </div>
     </div>
 }

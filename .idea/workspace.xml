@@ -4,15 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b65767a5-3ac5-48eb-8066-f803a31a0157" name="Changes" comment="">
+    <list default="true" id="b65767a5-3ac5-48eb-8066-f803a31a0157" name="Changes" comment="Added financial Report (Add, Put, Delete)">
+      <change afterPath="$PROJECT_DIR$/src/Component/Content/FinancialReport/actionsOnFinancialReport/FixedFinancialReport.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Component/Content/StartPage/StartPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Content/FinancialReport/FinancialReport.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/FinancialReport/FinancialReport.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Component/Content/FinancialReport/FinancialReports.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/FinancialReport/FinancialReports.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Content/FinancialReport/actionsOnFinancialReport/AddFinancialReport.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/FinancialReport/actionsOnFinancialReport/AddFinancialReport.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Component/Content/FinancialReport/actionsOnFinancialReport/ChangeFinancialReport.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/FinancialReport/actionsOnFinancialReport/ChangeFinancialReport.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Content/FinancialReport/actionsOnFinancialReport/DeleteFinancialReport.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/FinancialReport/actionsOnFinancialReport/DeleteFinancialReport.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NodeJS/DateJSON/Enterprises.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/NodeJS/DateJSON/Enterprises.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/NodeJS/DateJSON/FinancialReport.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/NodeJS/DateJSON/FinancialReport.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/Reducers/financialReport-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Reducers/financialReport-reducer.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,7 +156,8 @@
       <workItem from="1682069760136" duration="14677000" />
       <workItem from="1682360272073" duration="24000" />
       <workItem from="1682423820432" duration="2969000" />
-      <workItem from="1682523135171" duration="1890000" />
+      <workItem from="1682523135171" duration="1960000" />
+      <workItem from="1682595031274" duration="2045000" />
     </task>
     <task id="LOCAL-00001" summary="Start">
       <created>1680701964809</created>
@@ -283,7 +285,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682426771522</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Added financial Report (Add, Put, Delete)">
+      <created>1682525119027</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1682525119027</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -308,6 +317,7 @@
     <MESSAGE value="Added company (post)" />
     <MESSAGE value="Added company (put and delete)" />
     <MESSAGE value="Added financial Report (server, API, reducer, blank for the interface)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added financial Report (server, API, reducer, blank for the interface)" />
+    <MESSAGE value="Added financial Report (Add, Put, Delete)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added financial Report (Add, Put, Delete)" />
   </component>
 </project>

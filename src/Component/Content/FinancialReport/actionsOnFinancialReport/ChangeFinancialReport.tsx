@@ -26,7 +26,6 @@ export const ChangeFinancialReport = () => {
         setProfit(0);
         setDateOfStart('11.11.1111');
         setDateOfEnd('11.11.1111');
-
     };
 
     const onNameChange = (e: any) => {

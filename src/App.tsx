@@ -9,6 +9,7 @@ import {Companys} from "./Component/Content/Company/Companys";
 import {Currency} from "./Component/Content/Currency/Currency";
 import {Enterprises} from "./Component/Content/Enterprise/Enterprises";
 import {FinancialReports} from "./Component/Content/FinancialReport/FinancialReports";
+import {StartPage} from "./Component/Content/StartPage/StartPage";
 
 const AppStart = () => {
     return (
@@ -17,6 +18,7 @@ const AppStart = () => {
 
             <div className='app-wrapper-content'>
                 <Routes>
+                    <Route path='/' element={<StartPage/>}/>
                     <Route path='/company' element={<Companys/>}/>
                     <Route path='/currency' element={<Currency/>}/>
                     <Route path='/enterprise' element={<Enterprises/>}/>
