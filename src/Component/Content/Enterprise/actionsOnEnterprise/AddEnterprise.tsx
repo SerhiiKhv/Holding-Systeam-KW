@@ -43,13 +43,15 @@ export const AddEnterprise = () => {
                 <form onSubmit={handleSubmit}>
                     <Field
                         value={name} onChange={onNameChange}
-                        type='text' name='name' className={style.inputField}/>
+                        type='text' name='name' className={style.inputField}
+                        placeholder={"Назва"}/>
                     <Field
                         value={profit} onChange={onProfitChange}
                         type='number' name='profit' className={style.inputField}/>
                     <Field
                         value={dateOfCreation} onChange={onDateOfCreationChange}
-                        type='text' name='dateOfCreation' className={style.inputField}/>
+                        type='text' name='dateOfCreation' className={style.inputField}
+                        placeholder={"дд.мм.рррр"}/>
 
                     <button type="submit" className={style.button}>
                         Submit

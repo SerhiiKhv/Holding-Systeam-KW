@@ -12,8 +12,8 @@ export const ChangeFinancialReport = () => {
 
     const [name, setName] = useState('')
     const [profit, setProfit] = useState( 0 )
-    const [dateOfStart, setDateOfStart] = useState( '11.11.1111' )
-    const [dateOfEnd, setDateOfEnd] = useState( '11.11.1111' )
+    const [dateOfStart, setDateOfStart] = useState( '' )
+    const [dateOfEnd, setDateOfEnd] = useState( '' )
     const [id, setId] = useState(0)
 
     useEffect(() => {
@@ -24,8 +24,8 @@ export const ChangeFinancialReport = () => {
             dateOfStart, dateOfEnd, 'false'));
         setName('');
         setProfit(0);
-        setDateOfStart('11.11.1111');
-        setDateOfEnd('11.11.1111');
+        setDateOfStart('');
+        setDateOfEnd('');
     };
 
     const onNameChange = (e: any) => {
@@ -59,8 +59,8 @@ export const ChangeFinancialReport = () => {
         <div>
             <Formik
                 initialValues={{name: "", profit: 0,
-                    dateOfStart: "11.11.1111",
-                    dateOfEnd: "11.11.1111"}}
+                    dateOfStart: "",
+                    dateOfEnd: ""}}
                 onSubmit={submit}
             >
                 {({handleSubmit}) => (
@@ -85,6 +85,7 @@ export const ChangeFinancialReport = () => {
                             value={dateOfStart}
                             className={style.inputField}
                             onChange={onDateOfStartChange}
+                            placeholder={"дд.мм.рррр"}
                         />
 
                         <Field
@@ -93,6 +94,7 @@ export const ChangeFinancialReport = () => {
                             value={dateOfEnd}
                             className={style.inputField}
                             onChange={onDateOfEndChange}
+                            placeholder={"дд.мм.рррр"}
                         />
 
                         <button type="submit" className={style.button}>

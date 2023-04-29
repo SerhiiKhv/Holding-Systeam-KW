@@ -2,6 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const enterpriseRouter = require('./RequestsType/enterpriseRequest');
 const companyRouter = require('./RequestsType/companyRequest');
+const currencyRouter = require('./RequestsType/currencyRequest');
 const financialReportRouter = require('./RequestsType/financialReportRequest');
 const app = express();
 
@@ -18,15 +19,7 @@ app.use((req, res, next) => {
 app.use('/enterprise', enterpriseRouter);
 app.use('/company', companyRouter);
 app.use('/financialReport', financialReportRouter);
-
-app.get('/currency', (req, res) => {
-    const currency = { name: 'UAH' };
-
-    res.setHeader('Content-Type', 'application/json');
-    res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
-    res.setHeader('Access-Control-Allow-Credentials', 'true');
-    res.send(JSON.stringify(currency));
-});
+app.use('/currency', currencyRouter);
 
 const port = 4000;
 app.listen(port, () => {

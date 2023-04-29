@@ -44,6 +44,7 @@ export const AddCompanys = () => {
                             name="name"
                             value={values.name}
                             className={style.inputField}
+                            placeholder={"Назва"}
                         />
 
                         <div className={style.CompanyNameList}>

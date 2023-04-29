@@ -23,8 +23,8 @@ export const AddFinancialReport = () => {
             values.dateOfStart, values.dateOfEnd, 'false'));
         values.name = "";
         values.profit = 0;
-        values.dateOfStart = '11.11.1111';
-        values.dateOfEnd = '11.11.1111';
+        values.dateOfStart = '';
+        values.dateOfEnd = '';
     };
 
     let optionElement = enterprise.map(d =>  <option key={d.id} value={d.name}>{d.name}</option>);
@@ -33,8 +33,8 @@ export const AddFinancialReport = () => {
         <div>
             <Formik
                 initialValues={{name: "", profit: 0,
-                    dateOfStart: "11.11.1111",
-                    dateOfEnd: "11.11.1111"}}
+                    dateOfStart: "",
+                    dateOfEnd: ""}}
                 onSubmit={submit}
             >
                 {({values, handleSubmit}) => (
@@ -57,6 +57,7 @@ export const AddFinancialReport = () => {
                             name="dateOfStart"
                             value={values.dateOfStart}
                             className={style.inputField}
+                            placeholder={"дд.мм.рррр"}
                         />
 
                         <Field
@@ -64,6 +65,7 @@ export const AddFinancialReport = () => {
                             name="dateOfEnd"
                             value={values.dateOfEnd}
                             className={style.inputField}
+                            placeholder={"дд.мм.рррр"}
                         />
 
 

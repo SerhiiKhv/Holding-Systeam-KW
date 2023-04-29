@@ -68,7 +68,8 @@ export const ChangeEnterprise = () => {
 
                     <Field
                         value={dateOfCreation} onChange={onDateOfCreationChange}
-                        type='text' name='dateOfCreation' className={style.inputField}/>
+                        type='text' name='dateOfCreation' placeholder={"дд.мм.рррр"}
+                        className={style.inputField}/>
 
                     <button type="submit" className={style.button}>
                         Submit
