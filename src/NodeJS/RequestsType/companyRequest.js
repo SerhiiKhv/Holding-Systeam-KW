@@ -1,139 +1,77 @@
 const express = require('express');
-const fs = require('fs');
+const fs = require('fs').promises;
 
 const router = express.Router();
 
 const companyFilePath = './DateJSON/Company.json';
 
-router.get('/', (req, res) => {
-    fs.readFile(companyFilePath, (err, data) => {
-        if (err) {
-            console.error(err);
-            res.status(500).send('Internal server error');
+router.get('/', async (req, res) => {
+    try {
+        const data = await fs.readFile(companyFilePath);
+        res.send(data);
+    } catch (err) {
+        console.error(err);
+        res.status(500).send('Internal server error');
+    }
+});
+
+router.post('/', async (req, res) => {
+    try {
+        const newCompany = req.body;
+        const data = await fs.readFile(companyFilePath);
+        const companys = JSON.parse(data);
+
+        if (newCompany && Object.keys(newCompany).length > 0) {
+            newCompany.id = Date.now();
+            companys.push(newCompany);
+        }
+
+        await fs.writeFile(companyFilePath, JSON.stringify(companys));
+        res.sendStatus(200);
+    } catch (error) {
+        console.error(error);
+        res.status(400).send('Bad request');
+    }
+});
+
+router.put('/:id', async (req, res) => {
+    try {
+        const id = parseInt(req.params.id);
+        const newCompany = req.body;
+
+        let data = await fs.readFile(companyFilePath);
+        let companys = JSON.parse(data);
+        const companyIndex = companys.findIndex((e) => e.id === id);
+
+        if (companyIndex === -1) {
+            res.status(404).send('Company not found');
             return;
         }
 
-        res.setHeader('Content-Type', 'application/json');
-        res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
-        res.setHeader('Access-Control-Allow-Credentials', 'true');
-        res.send(data);
-    });
-});
-
-router.post('/', (req, res) => {
-    try {
-        const newCompany = req.body;
-
-        fs.readFile(companyFilePath, (err, data) => {
-            if (err) {
-                console.error(err);
-                res.status(500).send('Internal server error');
-                return;
-            }
-
-            const companys = JSON.parse(data);
-
-            if (newCompany && Object.keys(newCompany).length > 0) {
-                newCompany.id = Date.now();
-                companys.push(newCompany);
-            }
-
-            fs.writeFile(companyFilePath, JSON.stringify(companys), (err) => {
-                if (err) {
-                    console.error(err);
-                    res.status(500).send('Internal server error');
-                    return;
-                }
-
-                res.setHeader('Content-Type', 'application/json');
-                res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
-                res.setHeader('Access-Control-Allow-Credentials', 'true');
-                res.sendStatus(200);
-            });
-        });
+        companys[companyIndex] = {...companys[companyIndex], ...newCompany};
+        await fs.writeFile(companyFilePath, JSON.stringify(companys));
+        res.sendStatus(200);
     } catch (error) {
         console.error(error);
         res.status(400).send('Bad request');
     }
 });
 
-router.put('/:id', (req, res) => {
+router.delete('/:id', async (req, res) => {
     try {
         const id = parseInt(req.params.id);
-        const newCompany = req.body;
+        let data = await fs.readFile(companyFilePath);
+        let companys = JSON.parse(data);
+        const companyIndex = companys.findIndex((e) => e.id === id);
 
-        fs.readFile(companyFilePath, (err, data) => {
-            if (err) {
-                console.error(err);
-                res.status(500).send('Internal server error');
-                return;
-            }
+        if (companyIndex === -1) {
+            res.status(404).send('Company not found');
+            return;
+        }
 
-            let companys = JSON.parse(data);
-
-            const companyIndex = companys.findIndex((e) => e.id === id);
-
-            if (companyIndex === -1) {
-                res.status(404).send('Company not found');
-                return;
-            }
-
-            companys[companyIndex] = { ...companys[companyIndex], ...newCompany }; // Замінюємо дані підприємства
-
-            fs.writeFile(companyFilePath, JSON.stringify(companys), (err) => {
-                if (err) {
-                    console.error(err);
-                    res.status(500).send('Internal server error');
-                    return;
-                }
-
-                res.setHeader('Content-Type', 'application/json');
-                res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
-                res.setHeader('Access-Control-Allow-Credentials', 'true');
-                res.sendStatus(200);
-            });
-        });
-    } catch (error) {
-        console.error(error);
-        res.status(400).send('Bad request');
-    }
-});
-
-router.delete('/:id', (req, res) => {
-    try {
-        const id = parseInt(req.params.id);
-
-        fs.readFile(companyFilePath, (err, data) => {
-            if (err) {
-                console.error(err);
-                res.status(500).send('Internal server error');
-                return;
-            }
-
-            let companys = JSON.parse(data);
-
-            const companyIndex = companys.findIndex((e) => e.id === id); // Знаходимо індекс підприємства за його id
-
-            if (companyIndex === -1) {
-                res.status(404).send('Company not found');
-                return;
-            }
-
-            companys.splice(companyIndex, 1); // Видаляємо підприємство з масиву
-
-            fs.writeFile(companyFilePath, JSON.stringify(companys), (err) => {
-                if (err) {
-                    console.error(err);
-                    res.status(500).send('Internal server error');
-                    return;
-                }
-
-                res.setHeader('Content-Type', 'application/json');
-                res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
-                res.setHeader('Access-Control-Allow-Credentials', 'true');
-                res.sendStatus(200);
-            });
-        });
+        companys.splice(companyIndex, 1);
+        await fs.writeFile(companyFilePath, JSON.stringify(companys));
+        res.sendStatus(200);
     } catch (error) {
         console.error(error);
         res.status(400).send('Bad request');
