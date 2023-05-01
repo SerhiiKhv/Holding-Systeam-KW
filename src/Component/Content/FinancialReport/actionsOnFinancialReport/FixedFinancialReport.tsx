@@ -14,14 +14,14 @@ export const FixedFinancialReport = () => {
 
     const [name, setName] = useState('')
     const [profit, setProfit] = useState(0)
-    const [dateOfStart, setDateOfStart] = useState('11.11.1111')
-    const [dateOfEnd, setDateOfEnd] = useState('11.11.1111')
+    const [dateOfStart, setDateOfStart] = useState('')
+    const [dateOfEnd, setDateOfEnd] = useState('')
     const [id, setId] = useState(0)
 
     const [idEnterprise, setIdEnterprise] = useState(0)
     const [nameEnterprise, setNameEnterprise] = useState('')
     const [profitEnterprise, setProfitEnterprise] = useState(0)
-    const [dateOfCreation, setDateOfCreation] = useState('11.11.1111')
+    const [dateOfCreation, setDateOfCreation] = useState('')
 
     useEffect(() => {
         dispatch(getEnterprise());
@@ -35,22 +35,25 @@ export const FixedFinancialReport = () => {
 
         setName('');
         setProfit(0);
-        setDateOfStart('11.11.1111');
-        setDateOfEnd('11.11.1111');
+        setDateOfStart('');
+        setDateOfEnd('');
 
     };
 
     const onNameChange = (e: any) => {
-        const selectedName = e.currentTarget.value;
-        setName(selectedName);
+        const selectedId = e.currentTarget.value;
 
-        const selectedFinancialReport = financialReport.find(d => d.name === selectedName);
-        const selectedEnterprise = enterprise.find(d => d.name === selectedName);
+        const selectedFinancialReport = financialReport.find(d => d.id == selectedId);
+
         if (selectedFinancialReport) {
+            setName(selectedFinancialReport.name);
             setProfit(selectedFinancialReport.profit);
             setDateOfStart(selectedFinancialReport.dateOfStart);
             setDateOfEnd(selectedFinancialReport.dateOfEnd);
-            setId(selectedFinancialReport.id)
+            setId(selectedId)
+
+            const selectedEnterprise = enterprise.find(d => d.name === selectedFinancialReport.name);
+            console.log(selectedEnterprise)
             if (selectedEnterprise) {
                 let newProfitEnterprise = selectedEnterprise.profit + selectedFinancialReport.profit;
                 setNameEnterprise(selectedEnterprise.name);
@@ -63,17 +66,17 @@ export const FixedFinancialReport = () => {
     }
 
     let optionElement = financialReport
-        .filter((d) => d.isFixed === 'false')
+        .filter(d => d.isFixed === 'false')
         .map(d => <option key={d.id}
-                                                                                              value={d.name}>{d.name}</option>);
+                          value={d.id}>{d.name}</option>);
 
     return (
         <div>
             <Formik
                 initialValues={{
                     name: "", profit: 0,
-                    dateOfStart: "11.11.1111",
-                    dateOfEnd: "11.11.1111"
+                    dateOfStart: "",
+                    dateOfEnd: ""
                 }}
                 onSubmit={submit}
             >
@@ -86,6 +89,9 @@ export const FixedFinancialReport = () => {
                         </Field>
 
                         <div>
+                            Назва компанії: {name}
+                        </div>
+                        <div>
                             Прибуток: {profit}
                         </div>
                         <div>
@@ -94,7 +100,6 @@ export const FixedFinancialReport = () => {
                         <div>
                             Кінець кварталу:{dateOfEnd}
                         </div>
-
 
                         <button type="submit" className={style.button}>
                             Submit
