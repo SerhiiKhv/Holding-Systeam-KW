@@ -29,19 +29,23 @@ export const FinancialReports = () => {
             }
         </div>
 
-        <div>
+        <div className={style.financialReportComponent}>
+            <h3>Додати новий звіт:</h3>
             <AddFinancialReport/>
         </div>
 
-        <div>
+        <div className={style.financialReportComponent}>
+            <h3>Змінити звіт:</h3>
             <ChangeFinancialReport/>
         </div>
 
-        <div>
+        <div className={style.financialReportComponent}>
+            <h3>Видалити звіт:</h3>
             <DeleteFinancialReport/>
         </div>
 
-        <div>
+        <div className={style.financialReportComponent}>
+            <h3>Зафіксувати звіт:</h3>
             <FixedFinancialReport/>
         </div>
     </div>

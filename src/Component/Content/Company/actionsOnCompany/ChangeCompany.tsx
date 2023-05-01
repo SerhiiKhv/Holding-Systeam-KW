@@ -84,6 +84,7 @@ export const ChangeCompanys = () => {
                             onChange={onNameChange}
 
                         >
+                            <option key="default" value="">Виберіть компанію:</option>
                             {optionElement}
                         </Field>
 

@@ -53,7 +53,6 @@ export const FixedFinancialReport = () => {
             setId(selectedId)
 
             const selectedEnterprise = enterprise.find(d => d.name === selectedFinancialReport.name);
-            console.log(selectedEnterprise)
             if (selectedEnterprise) {
                 let newProfitEnterprise = selectedEnterprise.profit + selectedFinancialReport.profit;
                 setNameEnterprise(selectedEnterprise.name);
@@ -85,6 +84,7 @@ export const FixedFinancialReport = () => {
                         <Field
                             value={name} onChange={onNameChange}
                             name="name" as="select" className={style.inputField}>
+                            <option key="default" value="">Виберіть звіт:</option>
                             {optionElement}
                         </Field>
 

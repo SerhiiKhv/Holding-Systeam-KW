@@ -68,6 +68,7 @@ export const ChangeFinancialReport = () => {
                         <Field
                             value={name} onChange={onNameChange}
                             name="name" as="select" className={style.inputField}>
+                            <option key="default" value="">Виберіть звіт: </option>
                             {optionElement}
                         </Field>
 

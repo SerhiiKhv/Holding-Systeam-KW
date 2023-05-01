@@ -59,6 +59,7 @@ export const ChangeEnterprise = () => {
                     <Field
                         value={name} onChange={onNameChange}
                         name="name" as="select" className={style.inputField}>
+                        <option key="default" value="">Виберіть підприємство:</option>
                         {optionElement}
                     </Field>
 

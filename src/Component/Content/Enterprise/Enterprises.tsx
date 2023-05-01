@@ -25,16 +25,16 @@ export const Enterprises = () => {
             }
         </div>
 
-        <div>
+        <div className={style.enterprisesComponent}>
             <h3>Додати нове підприємство:</h3>
             <AddEnterprise/>
         </div>
 
-        <div>
+        <div className={style.enterprisesComponent}>
             <h3>Змінити дані існуючого підприємства:</h3>
             <ChangeEnterprise/>
         </div>
-        <div>
+        <div className={style.enterprisesComponent}>
             <h3>Видалити існуюче підприємства:</h3>
             <DeleteEnterprise/>
         </div>

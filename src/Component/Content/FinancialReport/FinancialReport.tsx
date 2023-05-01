@@ -1,26 +1,27 @@
 import {FinancialReportType} from "../../../Redux/Types/types";
 import React from "react";
+import style from "./FinancialReport.module.css"
 
 type MapStateToProps = {
     financialReport: FinancialReportType
 }
 export const FinancialReport: React.FC<MapStateToProps> = ({financialReport}) => {
 
-    return <div>
+    return <div className={style.financialReports}>
         <div>
-            {financialReport.name}
+            Назва компанії: {financialReport.name}
         </div>
         <div>
-            {financialReport.profit}
+            Прибуток: {financialReport.profit}
         </div>
         <div>
-            {financialReport.dateOfStart}
+            Початок кварталу: {financialReport.dateOfStart}
         </div>
         <div>
-            {financialReport.dateOfEnd}
+            Кінець кварталу: {financialReport.dateOfEnd}
         </div>
         <div>
-            {financialReport.isFixed}
+            Звіт зафіксовано: {financialReport.isFixed}
         </div>
     </div>
 }

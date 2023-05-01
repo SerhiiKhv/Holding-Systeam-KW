@@ -13,10 +13,10 @@ export const Company: React.FC<MapStateToProps> = ({company}) => {
 
     return <div className={style.company}>
         <div>
-            {company.name}
+            Назва: {company.name}
         </div>
        <div>
-           {listEnterprises}
+           Підприємства: {listEnterprises}
        </div>
     </div>
 }

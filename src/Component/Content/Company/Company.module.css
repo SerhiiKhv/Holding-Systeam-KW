@@ -7,13 +7,8 @@
     overflow: auto;
 }
 
-.companys > div:first-child {
-    flex: 1;
-}
-
-.companys > div:last-child {
-    flex: 2;
-    margin-left: 50px;
+.companyComponent {
+    margin-right: 30px;
 }
 
 

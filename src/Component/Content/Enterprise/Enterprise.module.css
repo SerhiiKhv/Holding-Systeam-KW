@@ -14,13 +14,8 @@
     margin: 10px;
 }
 
-.enterprise > div:first-child {
-    flex: 1;
-}
-
-.enterprise > div:last-child {
-    flex: 2;
-    margin-left: 50px;
+.enterprisesComponent {
+    margin-right: 30px;
 }
 
 .inputField {

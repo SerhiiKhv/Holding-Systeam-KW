@@ -26,17 +26,17 @@ export const Companys = () => {
             }
         </div>
 
-        <div>
+        <div className={style.companyComponent}>
             <h3>Додати нову компанію:</h3>
             <AddCompanys/>
         </div>
 
-        <div>
+        <div className={style.companyComponent}>
             <h3>Змінити дані існуючої компанії:</h3>
             <ChangeCompanys/>
         </div>
 
-        <div>
+        <div className={style.companyComponent}>
             <h3>Видалити існуючу компанію:</h3>
             <DeleteCompanys/>
         </div>

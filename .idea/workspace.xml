@@ -4,19 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b65767a5-3ac5-48eb-8066-f803a31a0157" name="Changes" comment="Refactoring NodeJS request">
-      <change afterPath="$PROJECT_DIR$/src/NodeJS/DateJSON/Currency.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NodeJS/RequestsType/currencyRequest.js" afterDir="false" />
+    <list default="true" id="b65767a5-3ac5-48eb-8066-f803a31a0157" name="Changes" comment="Added currency (server)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Content/Company/actionsOnCompany/AddCompany.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/Company/actionsOnCompany/AddCompany.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Content/Enterprise/actionsOnEnterprise/AddEnterprise.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/Enterprise/actionsOnEnterprise/AddEnterprise.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/Content/Company/Company.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/Company/Company.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/Content/Company/Company.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/Company/Company.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/Content/Company/Companys.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/Company/Companys.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/Content/Company/actionsOnCompany/ChangeCompany.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/Company/actionsOnCompany/ChangeCompany.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/Content/Company/actionsOnCompany/DeleteCompany.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/Company/actionsOnCompany/DeleteCompany.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/Content/Enterprise/Enterprise.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/Enterprise/Enterprise.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/Content/Enterprise/Enterprises.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/Enterprise/Enterprises.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/Content/Enterprise/actionsOnEnterprise/DeleteEnterprice.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/Enterprise/actionsOnEnterprise/DeleteEnterprice.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Component/Content/Enterprise/actionsOnEnterprise/changeEnterprise.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/Enterprise/actionsOnEnterprise/changeEnterprise.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/Content/FinancialReport/FinancialReport.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/FinancialReport/FinancialReport.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/Content/FinancialReport/FinancialReport.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/FinancialReport/FinancialReport.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/Content/FinancialReport/FinancialReports.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/FinancialReport/FinancialReports.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Component/Content/FinancialReport/actionsOnFinancialReport/AddFinancialReport.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/FinancialReport/actionsOnFinancialReport/AddFinancialReport.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Component/Content/FinancialReport/actionsOnFinancialReport/ChangeFinancialReport.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/FinancialReport/actionsOnFinancialReport/ChangeFinancialReport.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/Content/FinancialReport/actionsOnFinancialReport/DeleteFinancialReport.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/FinancialReport/actionsOnFinancialReport/DeleteFinancialReport.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/Content/FinancialReport/actionsOnFinancialReport/FixedFinancialReport.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/FinancialReport/actionsOnFinancialReport/FixedFinancialReport.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/NodeJS/DateJSON/Company.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/NodeJS/DateJSON/Company.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/NodeJS/DateJSON/Enterprises.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/NodeJS/DateJSON/Enterprises.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/NodeJS/DateJSON/FinancialReport.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/NodeJS/DateJSON/FinancialReport.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NodeJS/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/NodeJS/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,8 +47,8 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
-        <option value="A" />
         <option value="Alamay &lt;khvechuksergiyko@gmail.com&gt;" />
+        <option value="A" />
       </list>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -107,7 +115,7 @@
       <recent name="E:\Навчання\Курсові\Курсова 6 семестр\cod\src\Redux\DateJSON" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.server.js">
+  <component name="RunManager" selected="npm.npm start">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
       <method v="2" />
     </configuration>
@@ -162,7 +170,9 @@
       <workItem from="1682423820432" duration="2969000" />
       <workItem from="1682523135171" duration="1960000" />
       <workItem from="1682595031274" duration="2348000" />
-      <workItem from="1682779230980" duration="4722000" />
+      <workItem from="1682779230980" duration="4812000" />
+      <workItem from="1682883598710" duration="995000" />
+      <workItem from="1682927806791" duration="4975000" />
     </task>
     <task id="LOCAL-00001" summary="Start">
       <created>1680701964809</created>
@@ -311,7 +321,21 @@
       <option name="project" value="LOCAL" />
       <updated>1682788957896</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Added currency (server)">
+      <created>1682789338210</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1682789338210</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Fixed a bug with selecting only the first occurrence of the company name">
+      <created>1682932438455</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1682932438455</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -339,6 +363,8 @@
     <MESSAGE value="Added financial Report (Add, Put, Delete)" />
     <MESSAGE value="Added financial Report (fixing it in the enterprise)" />
     <MESSAGE value="Refactoring NodeJS request" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactoring NodeJS request" />
+    <MESSAGE value="Added currency (server)" />
+    <MESSAGE value="Fixed a bug with selecting only the first occurrence of the company name" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed a bug with selecting only the first occurrence of the company name" />
   </component>
 </project>
