@@ -4,25 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b65767a5-3ac5-48eb-8066-f803a31a0157" name="Changes" comment="Added currency (server)">
+    <list default="true" id="b65767a5-3ac5-48eb-8066-f803a31a0157" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Content/Company/Company.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/Company/Company.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Content/Company/Company.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/Company/Company.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Content/Company/Companys.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/Company/Companys.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Content/Company/actionsOnCompany/ChangeCompany.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/Company/actionsOnCompany/ChangeCompany.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Content/Company/actionsOnCompany/DeleteCompany.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/Company/actionsOnCompany/DeleteCompany.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Component/Content/Enterprise/Enterprise.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/Enterprise/Enterprise.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Component/Content/Enterprise/Enterprises.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/Enterprise/Enterprises.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/Content/Enterprise/actionsOnEnterprise/AddEnterprise.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/Enterprise/actionsOnEnterprise/AddEnterprise.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Component/Content/Enterprise/actionsOnEnterprise/DeleteEnterprice.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/Enterprise/actionsOnEnterprise/DeleteEnterprice.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Component/Content/Enterprise/actionsOnEnterprise/changeEnterprise.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/Enterprise/actionsOnEnterprise/changeEnterprise.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Component/Content/FinancialReport/FinancialReport.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/FinancialReport/FinancialReport.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Content/FinancialReport/FinancialReport.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/FinancialReport/FinancialReport.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Component/Content/FinancialReport/FinancialReports.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/FinancialReport/FinancialReports.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Component/Content/FinancialReport/actionsOnFinancialReport/AddFinancialReport.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/FinancialReport/actionsOnFinancialReport/AddFinancialReport.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Component/Content/FinancialReport/actionsOnFinancialReport/ChangeFinancialReport.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/FinancialReport/actionsOnFinancialReport/ChangeFinancialReport.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Component/Content/FinancialReport/actionsOnFinancialReport/DeleteFinancialReport.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/FinancialReport/actionsOnFinancialReport/DeleteFinancialReport.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Component/Content/FinancialReport/actionsOnFinancialReport/FixedFinancialReport.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/FinancialReport/actionsOnFinancialReport/FixedFinancialReport.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NodeJS/DateJSON/Company.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/NodeJS/DateJSON/Company.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/NodeJS/DateJSON/Enterprises.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/NodeJS/DateJSON/Enterprises.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/NodeJS/DateJSON/FinancialReport.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/NodeJS/DateJSON/FinancialReport.json" afterDir="false" />
     </list>
@@ -77,28 +73,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;18.15.0&quot;,
-    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;18.15.0&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/Навчання/Курсові/Курсова 6 семестр/cod/src/NodeJS/RequestsType&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;E:\\Навчання\\Курсові\\Курсова 6 семестр\\cod\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "javascript.nodejs.core.library.configured.version": "18.15.0",
+    "javascript.nodejs.core.library.typings.version": "18.15.0",
+    "last_opened_file_path": "D:/IT/Holding-Systeam",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_interpreter_path": "node",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "D:\\IT\\Holding-Systeam\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Навчання\Курсові\Курсова 6 семестр\cod\src\NodeJS\RequestsType" />
@@ -172,7 +168,13 @@
       <workItem from="1682595031274" duration="2348000" />
       <workItem from="1682779230980" duration="4812000" />
       <workItem from="1682883598710" duration="995000" />
-      <workItem from="1682927806791" duration="4975000" />
+      <workItem from="1682927806791" duration="5293000" />
+      <workItem from="1683050272814" duration="80000" />
+      <workItem from="1683216234191" duration="509000" />
+      <workItem from="1683551100356" duration="779000" />
+      <workItem from="1683730440610" duration="118000" />
+      <workItem from="1683812349873" duration="5000" />
+      <workItem from="1683983395667" duration="7500000" />
     </task>
     <task id="LOCAL-00001" summary="Start">
       <created>1680701964809</created>
@@ -335,7 +337,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682932438455</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Minor bug fixes and minor styling changes">
+      <created>1682933142874</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1682933142874</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -365,6 +374,7 @@
     <MESSAGE value="Refactoring NodeJS request" />
     <MESSAGE value="Added currency (server)" />
     <MESSAGE value="Fixed a bug with selecting only the first occurrence of the company name" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed a bug with selecting only the first occurrence of the company name" />
+    <MESSAGE value="Minor bug fixes and minor styling changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Minor bug fixes and minor styling changes" />
   </component>
 </project>

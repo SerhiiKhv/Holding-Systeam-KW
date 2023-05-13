@@ -17,9 +17,9 @@ export const Enterprises = () => {
     }, []);
 
     return <div className={style.enterprise}>
-        Enterprise:
 
         <div className={style.enterprisesList}>
+            Enterprise:
             {
                 enterprise.map((ent: any) => <Enterprise key={ent.id} enterprise={ent}/>)
             }
@@ -34,6 +34,7 @@ export const Enterprises = () => {
             <h3>Змінити дані існуючого підприємства:</h3>
             <ChangeEnterprise/>
         </div>
+
         <div className={style.enterprisesComponent}>
             <h3>Видалити існуюче підприємства:</h3>
             <DeleteEnterprise/>

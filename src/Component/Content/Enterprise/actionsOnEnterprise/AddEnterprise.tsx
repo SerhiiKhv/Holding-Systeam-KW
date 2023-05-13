@@ -50,8 +50,7 @@ export const AddEnterprise = () => {
                         type='number' name='profit' className={style.inputField}/>
                     <Field
                         value={dateOfCreation} onChange={onDateOfCreationChange}
-                        type='text' name='dateOfCreation' className={style.inputField}
-                        placeholder={"дд.мм.рррр"}/>
+                        type='date' name='dateOfCreation' className={style.inputField}/>
 
                     <button type="submit" className={style.button}>
                         Submit

@@ -20,7 +20,7 @@ export const ChangeEnterprise = () => {
         dispatch(changeEnterprise(id, name, Number(profit), dateOfCreation));
         setSuccessCheck(true)
         setTimeout(() => {
-            setSuccessCheck(false); // Зміна значення successCheck на false через 3 секунди
+            setSuccessCheck(false);
         }, 3000);
     };
 
@@ -58,9 +58,9 @@ export const ChangeEnterprise = () => {
                 <form onSubmit={handleSubmit}>
                     <Field
                         value={name} onChange={onNameChange}
-                        name="name" as="select" className={style.inputField}>
+                        name="name" as="select" className={style.inputFieldOption}>
                         <option key="default" value="">Виберіть підприємство:</option>
-                        {optionElement}
+                            {optionElement}
                     </Field>
 
                     <Field
@@ -69,7 +69,7 @@ export const ChangeEnterprise = () => {
 
                     <Field
                         value={dateOfCreation} onChange={onDateOfCreationChange}
-                        type='text' name='dateOfCreation' placeholder={"дд.мм.рррр"}
+                        type='date' name='dateOfCreation' placeholder={"дд-мм-рррр"}
                         className={style.inputField}/>
 
                     <button type="submit" className={style.button}>

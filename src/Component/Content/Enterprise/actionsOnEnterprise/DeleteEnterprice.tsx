@@ -47,7 +47,7 @@ export const DeleteEnterprise = () => {
                 <form onSubmit={handleSubmit}>
                     <Field
                         value={name} onChange={onNameChange}
-                        name="name" as="select" className={style.inputField}>
+                        name="name" as="select" className={style.inputFieldOption}>
                         <option key="default" value="">Виберіть підприємство:</option>
                         {optionElement}
                     </Field>
