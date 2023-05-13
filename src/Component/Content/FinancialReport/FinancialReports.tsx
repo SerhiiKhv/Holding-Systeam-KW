@@ -21,9 +21,10 @@ export const FinancialReports = () => {
     }, [])
 
     return <div className={style.financialReport}>
-        FinancialReport:
+
 
         <div className={style.FinancialReportList}>
+            FinancialReport:
             {
                 financialReport.map((fr: FinancialReportType) => <FinancialReport key={fr.id} financialReport={fr}/>)
             }

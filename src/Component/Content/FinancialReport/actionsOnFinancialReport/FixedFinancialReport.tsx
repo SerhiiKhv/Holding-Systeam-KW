@@ -2,7 +2,7 @@ import {useDispatch, useSelector} from "react-redux";
 import React, {useEffect, useState} from "react";
 import {changeEnterprise, getEnterprise} from "../../../../Redux/Reducers/enterprise-reducer";
 import {Field, Formik} from "formik";
-import style from "../../Company/Company.module.css";
+import style from "../FinancialReport.module.css";
 import {getFinancialReportSelector} from "../../../../Redux/selector/financialReport-selector";
 import {changeFinancialReport} from "../../../../Redux/Reducers/financialReport-reducer";
 import {getEnterpriseSelector} from "../../../../Redux/selector/enterprise-selector";
@@ -83,7 +83,7 @@ export const FixedFinancialReport = () => {
                     <form onSubmit={handleSubmit}>
                         <Field
                             value={name} onChange={onNameChange}
-                            name="name" as="select" className={style.inputField}>
+                            name="name" as="select" className={style.inputFieldOption}>
                             <option key="default" value="">Виберіть звіт:</option>
                             {optionElement}
                         </Field>

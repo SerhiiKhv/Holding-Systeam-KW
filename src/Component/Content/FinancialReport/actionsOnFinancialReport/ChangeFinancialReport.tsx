@@ -2,7 +2,7 @@ import {useDispatch, useSelector} from "react-redux";
 import React, {useEffect, useState} from "react";
 import {getEnterprise} from "../../../../Redux/Reducers/enterprise-reducer";
 import {Field, Formik} from "formik";
-import style from "../../Company/Company.module.css";
+import style from "../FinancialReport.module.css";
 import {getFinancialReportSelector} from "../../../../Redux/selector/financialReport-selector";
 import {changeFinancialReport} from "../../../../Redux/Reducers/financialReport-reducer";
 
@@ -67,7 +67,7 @@ export const ChangeFinancialReport = () => {
                     <form onSubmit={handleSubmit}>
                         <Field
                             value={name} onChange={onNameChange}
-                            name="name" as="select" className={style.inputField}>
+                            name="name" as="select" className={style.inputFieldOption}>
                             <option key="default" value="">Виберіть звіт: </option>
                             {optionElement}
                         </Field>
@@ -81,21 +81,19 @@ export const ChangeFinancialReport = () => {
                         />
 
                         <Field
-                            type="text"
+                            type="date"
                             name="dateOfStart"
                             value={dateOfStart}
                             className={style.inputField}
                             onChange={onDateOfStartChange}
-                            placeholder={"дд.мм.рррр"}
                         />
 
                         <Field
-                            type="text"
+                            type="date"
                             name="dateOfEnd"
                             value={dateOfEnd}
                             className={style.inputField}
                             onChange={onDateOfEndChange}
-                            placeholder={"дд.мм.рррр"}
                         />
 
                         <button type="submit" className={style.button}>

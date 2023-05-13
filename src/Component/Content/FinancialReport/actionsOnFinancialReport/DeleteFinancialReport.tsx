@@ -1,9 +1,9 @@
 import {useDispatch, useSelector} from "react-redux";
 import {getFinancialReportSelector} from "../../../../Redux/selector/financialReport-selector";
 import React, {useState} from "react";
-import {changeFinancialReport, destroyFinancialReport} from "../../../../Redux/Reducers/financialReport-reducer";
+import {destroyFinancialReport} from "../../../../Redux/Reducers/financialReport-reducer";
 import {Field, Formik} from "formik";
-import style from "../../Company/Company.module.css";
+import style from "../FinancialReport.module.css";
 
 export const DeleteFinancialReport = () => {
 
@@ -41,7 +41,7 @@ export const DeleteFinancialReport = () => {
                     <form onSubmit={handleSubmit}>
                         <Field
                             value={name} onChange={onNameChange}
-                            name="name" as="select" className={style.inputField}>
+                            name="name" as="select" className={style.inputFieldOption}>
                             <option key="default" value="">Виберіть звіт: </option>
                             {optionElement}
                         </Field>

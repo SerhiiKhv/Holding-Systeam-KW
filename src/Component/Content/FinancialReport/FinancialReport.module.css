@@ -2,6 +2,7 @@
     height: 600px;
     overflow: auto;
     margin: 10px;
+    grid-area: l;
 }
 
 .financialReports{
@@ -11,7 +12,13 @@
 
 .financialReport{
     padding: 20px;
-    display: flex;
+    display: grid;
+
+    grid-template-areas:
+   "l i"
+   "l i";
+
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .financialReportComponent {
@@ -23,9 +30,9 @@
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 10px;
+    height: 30px;
+    width: 20vw;
+    grid-area: i;
 }
 
 .button {
@@ -35,4 +42,19 @@
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
+}
+
+.inputFieldOption {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    height: 45px;
+    width: 20vw;
+    grid-area: i;
+}
+
+.formik{
+    display: flex;
+    flex-direction: column;
 }

@@ -3,7 +3,7 @@ import {getEnterpriseSelector} from "../../../../Redux/selector/enterprise-selec
 import React, {useEffect} from "react";
 import {getEnterprise} from "../../../../Redux/Reducers/enterprise-reducer";
 import {Field, Formik} from "formik";
-import style from "../../Company/Company.module.css";
+import style from "../FinancialReport.module.css";
 import {addFinancialReport} from "../../../../Redux/Reducers/financialReport-reducer";
 
 export const AddFinancialReport = () => {
@@ -41,7 +41,7 @@ export const AddFinancialReport = () => {
                     <form onSubmit={handleSubmit}>
 
                         <Field
-                            name="name" as="select" className={style.inputField}>
+                            name="name" as="select" className={style.inputFieldOption}>
                             <option key="default" value="">Виберіть підприємство:</option>
                             {optionElement}
                         </Field>
@@ -54,21 +54,18 @@ export const AddFinancialReport = () => {
                         />
 
                         <Field
-                            type="text"
+                            type="date"
                             name="dateOfStart"
                             value={values.dateOfStart}
                             className={style.inputField}
-                            placeholder={"дд.мм.рррр"}
                         />
 
                         <Field
-                            type="text"
+                            type="date"
                             name="dateOfEnd"
                             value={values.dateOfEnd}
                             className={style.inputField}
-                            placeholder={"дд.мм.рррр"}
                         />
-
 
                         <button type="submit" className={style.button}>
                             Submit
