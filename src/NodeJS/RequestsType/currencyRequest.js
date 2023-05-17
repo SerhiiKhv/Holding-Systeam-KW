@@ -3,7 +3,7 @@ const fs = require('fs').promises;
 
 const router = express.Router();
 
-const currencyFilePath = './DateJSON/Company.json';
+const currencyFilePath = './DateJSON/Currency.json';
 
 router.get('/', async (req, res) => {
     try {

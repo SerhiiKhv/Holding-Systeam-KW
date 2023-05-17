@@ -19,3 +19,9 @@ export type FinancialReportType = {
     id: number,
     isFixed: "true" | "false"
 }
+
+export type CurrencyType = {
+    id: number,
+    name: string,
+    priceToDollar: number
+}

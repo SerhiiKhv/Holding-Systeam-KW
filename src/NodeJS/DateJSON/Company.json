@@ -1,1 +1,17 @@
-[{"name":"IT-UA","enterprises":["IT-pro"],"id":1682034129867},{"name":"Word-IT","enterprises":["Unit","GlobalIT"],"id":1682090699626}]
+[
+  {
+    "name": "IT-UA",
+    "enterprises": [
+      "IT-pro"
+    ],
+    "id": 1682034129867
+  },
+  {
+    "name": "Word-IT",
+    "enterprises": [
+      "Unit",
+      "GlobalIT"
+    ],
+    "id": 1682090699626
+  }
+]

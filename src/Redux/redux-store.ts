@@ -4,12 +4,14 @@ import {appReducer} from "./app-reducer";
 import {enterprisePageReducer} from "./Reducers/enterprise-reducer";
 import {companyPageReducer} from "./Reducers/company-reducer";
 import {financialReportPageReducer} from "./Reducers/financialReport-reducer";
+import {currencyPageReducer} from "./Reducers/currency-reducer";
 
 let reducers = combineReducers({
     app: appReducer,
     enterprise: enterprisePageReducer,
     company: companyPageReducer,
-    financialReport: financialReportPageReducer
+    financialReport: financialReportPageReducer,
+    currency: currencyPageReducer
 });
 
 type RootReducerType = typeof reducers;

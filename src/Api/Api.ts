@@ -60,8 +60,6 @@ export const CompanyApi = {
             .then((res) => res.data)
     }
 }
-
-
 export const FinancialReportApi = {
     getFinancialReport(){
         return instance.get('financialReport')
@@ -100,6 +98,13 @@ export const FinancialReportApi = {
     },
     deleteFinancialReport(id: number){
         return instance.delete(`financialReport/${id}`)
+            .then((res) => res.data)
+    }
+}
+
+export const CurrencyApi ={
+    getCurrency(){
+        return instance.get('currency')
             .then((res) => res.data)
     }
 }

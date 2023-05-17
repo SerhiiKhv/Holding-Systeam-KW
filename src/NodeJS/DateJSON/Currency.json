@@ -1,5 +1,22 @@
 [
   {
-    "EUR": 1
+    "id": 1,
+    "name": "EUR",
+    "priceToDollar": 1.09
+  },
+  {
+    "id": 2,
+    "name": "USD",
+    "priceToDollar": 1
+  },
+  {
+    "id": 3,
+    "name": "UAH",
+    "priceToDollar": 0.027
+  },
+  {
+    "id": 4,
+    "name": "JPY",
+    "priceToDollar": 0.0073
   }
 ]
