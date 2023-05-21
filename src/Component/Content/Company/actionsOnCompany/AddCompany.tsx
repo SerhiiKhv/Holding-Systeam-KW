@@ -5,6 +5,7 @@ import {useDispatch, useSelector} from "react-redux";
 import {addCompany} from "../../../../Redux/Reducers/company-reducer";
 import {getEnterpriseSelector} from "../../../../Redux/selector/enterprise-selector";
 import {getEnterprise} from "../../../../Redux/Reducers/enterprise-reducer";
+import {required} from "../../../../utils/validators/validators";
 
 export const AddCompanys = () => {
     const enterprise = useSelector(getEnterpriseSelector);
@@ -37,7 +38,8 @@ export const AddCompanys = () => {
                 initialValues={{name: "", enterprises: []}}
                 onSubmit={submit}
             >
-                {({values, handleSubmit}) => (
+                {({errors, touched,
+                      values, handleSubmit}) => (
                     <form onSubmit={handleSubmit}>
                         <Field
                             type="text"
@@ -45,7 +47,9 @@ export const AddCompanys = () => {
                             value={values.name}
                             className={style.inputField}
                             placeholder={"Назва"}
+                            validate={required}
                         />
+                        {errors.name && touched.name && <div>{errors.name}</div>}
 
                         <div className={style.CompanyNameList}>
                             {checkboxElements}

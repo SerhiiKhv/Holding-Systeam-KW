@@ -4,18 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b65767a5-3ac5-48eb-8066-f803a31a0157" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Redux/Reducers/currency-reducer.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/selector/currency-selector.ts" afterDir="false" />
+    <list default="true" id="b65767a5-3ac5-48eb-8066-f803a31a0157" name="Changes" comment="Update Currency">
+      <change afterPath="$PROJECT_DIR$/src/Component/Content/Currency/Currency.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Api/Api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Api/Api.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/Content/Company/actionsOnCompany/AddCompany.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/Company/actionsOnCompany/AddCompany.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Component/Content/Currency/Currency.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/Currency/Currency.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/Content/Enterprise/actionsOnEnterprise/AddEnterprise.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/Enterprise/actionsOnEnterprise/AddEnterprise.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/Content/Enterprise/actionsOnEnterprise/DeleteEnterprice.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/Enterprise/actionsOnEnterprise/DeleteEnterprice.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/Content/Enterprise/actionsOnEnterprise/changeEnterprise.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/Enterprise/actionsOnEnterprise/changeEnterprise.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/NodeJS/DateJSON/Company.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/NodeJS/DateJSON/Company.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NodeJS/DateJSON/Currency.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/NodeJS/DateJSON/Currency.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/NodeJS/DateJSON/Enterprises.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/NodeJS/DateJSON/Enterprises.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NodeJS/RequestsType/currencyRequest.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/NodeJS/RequestsType/currencyRequest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/Types/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Types/types.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/redux-store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/redux-store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/validators/validators.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/validators/validators.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,10 +27,10 @@
         <option value="SCSS File" />
         <option value="HTML File" />
         <option value="Sass File" />
-        <option value="CSS File" />
         <option value="TypeScript JSX File" />
         <option value="JavaScript File" />
         <option value="TypeScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -106,7 +105,7 @@
       <recent name="E:\Навчання\Курсові\Курсова 6 семестр\cod\src\Redux\DateJSON" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.server.js">
+  <component name="RunManager" selected="npm.npm start">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
       <method v="2" />
     </configuration>
@@ -172,7 +171,8 @@
       <workItem from="1683983395667" duration="7755000" />
       <workItem from="1684231574247" duration="166000" />
       <workItem from="1684312015610" duration="166000" />
-      <workItem from="1684312805836" duration="5661000" />
+      <workItem from="1684312805836" duration="5958000" />
+      <workItem from="1684661973381" duration="4448000" />
     </task>
     <task id="LOCAL-00001" summary="Start">
       <created>1680701964809</created>
@@ -356,14 +356,20 @@
       <option name="project" value="LOCAL" />
       <updated>1683993649296</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Update Currency">
+      <created>1684319492818</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1684319492818</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Preparation" />
     <MESSAGE value="Added functions for currency" />
     <MESSAGE value="Added Enterprises" />
     <MESSAGE value="Added EnterpriseJSON and update Currency" />
@@ -388,6 +394,7 @@
     <MESSAGE value="Minor bug fixes and minor styling changes" />
     <MESSAGE value="Update CSS for Enterprise" />
     <MESSAGE value="Update CSS for FinancialReport" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update CSS for FinancialReport" />
+    <MESSAGE value="Update Currency" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update Currency" />
   </component>
 </project>
