@@ -62,7 +62,6 @@ export const Currency = () => {
                     <option key="default" value="">Виберіть валюту:</option>
                     {optionElement}
                 </select>
-                {rateFromCurrency}
             </div>
             <div>
                 <label>To:</label>
@@ -70,7 +69,6 @@ export const Currency = () => {
                     <option key="default" value="">Виберіть валюту:</option>
                     {optionElement}
                 </select>
-                {rateToCurrency}
             </div>
             <div>{amount} {fromCurrency} = {convertedAmount.toFixed(2)} {toCurrency}</div>
         </div>
