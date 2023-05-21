@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import {Field, Formik} from "formik";
 import {useDispatch, useSelector} from "react-redux";
 import style from "../Enterprise.module.css";
@@ -6,30 +6,25 @@ import {getEnterpriseSelector} from "../../../../Redux/selector/enterprise-selec
 import {destroyEnterprise} from "../../../../Redux/Reducers/enterprise-reducer";
 
 export const DeleteEnterprise = () => {
-
     const enterprise = useSelector(getEnterpriseSelector)
-    const [name, setName] = useState('')
-    const [id, setId] = useState(1)
-    const [successCheck, setSuccessCheck] = useState(false)
 
     const dispatch = useDispatch()
-
-    const submit = (): void => {
-        dispatch(destroyEnterprise(id));
-        setSuccessCheck(true)
+    const submit = (values: {name: string, id: number, successCheck: boolean}): void => {
+        dispatch(destroyEnterprise(values.id));
+        values.successCheck = true;
 
         setTimeout(() => {
-            setSuccessCheck(false); // Зміна значення successCheck на false через 3 секунди
+            values.successCheck = false;
         }, 3000);
     };
 
-    const onNameChange = (e: any) => {
+    const onNameChange = (e: any, handleChange: any, setFieldValue: any) => {
         const selectedName = e.currentTarget.value;
-        setName(selectedName);
+        handleChange(e);
 
         const selectedEnterprise = enterprise.find(d => d.name === selectedName);
         if (selectedEnterprise) {
-            setId(selectedEnterprise.id)
+            setFieldValue("id", selectedEnterprise.id);
         }
     }
 
@@ -38,15 +33,20 @@ export const DeleteEnterprise = () => {
     return <div>
         <Formik
             enableReinitialize
-            initialValues={{name: '', profit: 0, dateOfCreation: ''}}
+            initialValues={{
+                name: '',
+                id: 0,
+                successCheck: false}}
             onSubmit={submit}
         >
-            {({
+            {({   values,
+                  handleChange,
+                  setFieldValue,
                   handleSubmit
               }) => (
                 <form onSubmit={handleSubmit}>
                     <Field
-                        value={name} onChange={onNameChange}
+                        value={values.name} onChange={(e: any) => onNameChange(e, handleChange, setFieldValue)}
                         name="name" as="select" className={style.inputFieldOption}>
                         <option key="default" value="">Виберіть підприємство:</option>
                         {optionElement}
@@ -55,7 +55,7 @@ export const DeleteEnterprise = () => {
                     <button type="submit" className={style.button}>
                         Submit
                     </button>
-                    {successCheck? <p>Видалено</p> : <p></p>}
+                    {values.successCheck? <p>Видалено</p> : <p></p>}
                 </form>
             )}
         </Formik>

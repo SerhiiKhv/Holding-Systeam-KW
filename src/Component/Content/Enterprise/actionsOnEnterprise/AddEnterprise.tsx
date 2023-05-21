@@ -1,35 +1,19 @@
-import React, {useState} from "react";
+import React from "react";
 import {Field, Formik} from "formik";
 import {addEnterprise} from "../../../../Redux/Reducers/enterprise-reducer";
 import {useDispatch} from "react-redux";
 import style from "../Enterprise.module.css";
+import {required} from "../../../../utils/validators/validators";
 
 export const AddEnterprise = () => {
-
-    const [name, setName] = useState('')
-    const [profit, setProfit] = useState(0)
-    const [dateOfCreation, setDateOfCreation] = useState('')
-
     const dispatch = useDispatch()
 
-    const submit = (): void => {
-        dispatch(addEnterprise(name, Number(profit), dateOfCreation));
-        setName('');
-        setProfit(0);
-        setDateOfCreation('');
+    const submit = (values: {name: string, profit: number, dateOfCreation: string}): void => {
+        dispatch(addEnterprise(values.name, Number(values.profit), values.dateOfCreation));
+        values.name = ''
+        values.profit = 0
+        values.dateOfCreation = ''
     };
-
-
-    const onNameChange = (e: any) => {
-        setName(e.currentTarget.value);
-    }
-    const onProfitChange = (e: any) => {
-        setProfit(e.currentTarget.value);
-    }
-
-    const onDateOfCreationChange = (e: any) => {
-        setDateOfCreation(e.currentTarget.value);
-    }
 
     return <div>
         <Formik
@@ -37,20 +21,29 @@ export const AddEnterprise = () => {
             initialValues={{name: '', profit: 0, dateOfCreation: ''}}
             onSubmit={submit}
         >
-            {({
-                  handleSubmit
+            {({errors, touched,
+                  values,handleSubmit
             }) => (
                 <form onSubmit={handleSubmit}>
                     <Field
-                        value={name} onChange={onNameChange}
+                        value={values.name}
                         type='text' name='name' className={style.inputField}
-                        placeholder={"Назва"}/>
+                        placeholder={"Назва"} validate={required}/>
+                    {errors.name && touched.name && <div>{errors.name}</div>}
+
                     <Field
-                        value={profit} onChange={onProfitChange}
-                        type='number' name='profit' className={style.inputField}/>
+                        value={values.profit}
+                        type='number' name='profit' className={style.inputField}
+                        validate={required}/>
+                    {errors.profit && touched.profit && <div>{errors.profit}</div>}
+
                     <Field
-                        value={dateOfCreation} onChange={onDateOfCreationChange}
-                        type='date' name='dateOfCreation' className={style.inputField}/>
+                        value={values.dateOfCreation}
+                        type='date' name='dateOfCreation'
+                        className={style.inputField}
+                        validate={required}
+                        />
+                    {errors.dateOfCreation && touched.dateOfCreation && <div>{errors.dateOfCreation}</div>}
 
                     <button type="submit" className={style.button}>
                         Submit

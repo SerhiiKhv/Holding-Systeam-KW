@@ -1,83 +1,110 @@
-import React, {useState} from "react";
-import {Field, Formik} from "formik";
-import {useDispatch, useSelector} from "react-redux";
+import React from "react";
+import { Field, Formik } from "formik";
+import { useDispatch, useSelector } from "react-redux";
 import style from "../Enterprise.module.css";
-import {getEnterpriseSelector} from "../../../../Redux/selector/enterprise-selector";
-import {changeEnterprise} from "../../../../Redux/Reducers/enterprise-reducer";
+import { getEnterpriseSelector } from "../../../../Redux/selector/enterprise-selector";
+import { changeEnterprise } from "../../../../Redux/Reducers/enterprise-reducer";
+import {required} from "../../../../utils/validators/validators";
 
+type SubmitType = {
+    name: string,
+    profit: number,
+    dateOfCreation: string,
+    id: number,
+    successCheck: boolean
+}
 export const ChangeEnterprise = () => {
+    const enterprise = useSelector(getEnterpriseSelector);
+    const dispatch = useDispatch();
 
-    const enterprise = useSelector(getEnterpriseSelector)
-    const [name, setName] = useState('')
-    const [profit, setProfit] = useState(0)
-    const [dateOfCreation, setDateOfCreation] = useState('')
-    const [id, setId] = useState(1)
-    const [successCheck, setSuccessCheck] = useState(false)
-
-    const dispatch = useDispatch()
-
-    const submit = (): void => {
-        dispatch(changeEnterprise(id, name, Number(profit), dateOfCreation));
-        setSuccessCheck(true)
+    const submit = (values: SubmitType) => {
+        dispatch(
+            changeEnterprise(values.id, values.name, Number(values.profit), values.dateOfCreation)
+        );
+        values.successCheck = true;
         setTimeout(() => {
-            setSuccessCheck(false);
+            values.successCheck = false;
         }, 3000);
     };
 
-
-    const onNameChange = (e: any) => {
+    const onNameChange = (e: any, handleChange: any, setFieldValue: any) => {
         const selectedName = e.currentTarget.value;
-        setName(selectedName);
-
-        const selectedEnterprise = enterprise.find(d => d.name === selectedName);
+        handleChange(e);
+        const selectedEnterprise = enterprise.find((d) => d.name === selectedName);
         if (selectedEnterprise) {
-            setProfit(selectedEnterprise.profit);
-            setDateOfCreation(selectedEnterprise.dateOfCreation);
-            setId(selectedEnterprise.id)
+            setFieldValue("profit", selectedEnterprise.profit);
+            setFieldValue("dateOfCreation", selectedEnterprise.dateOfCreation);
+            setFieldValue("id", selectedEnterprise.id);
         }
-    }
-    const onProfitChange = (e: any) => {
-        setProfit(e.currentTarget.value);
-    }
+    };
 
-    const onDateOfCreationChange = (e: any) => {
-        setDateOfCreation(e.currentTarget.value);
-    }
+    let optionElement = enterprise.map((d) => (
+        <option key={d.id} value={d.name}>
+            {d.name}
+        </option>
+    ));
 
-    let optionElement = enterprise.map(d =>  <option key={d.id} value={d.name}>{d.name}</option>);
-
-    return <div>
-        <Formik
-            enableReinitialize
-            initialValues={{name: '', profit: 0, dateOfCreation: ''}}
-            onSubmit={submit}
-        >
-            {({
-                  handleSubmit
-              }) => (
-                <form onSubmit={handleSubmit}>
-                    <Field
-                        value={name} onChange={onNameChange}
-                        name="name" as="select" className={style.inputFieldOption}>
-                        <option key="default" value="">Виберіть підприємство:</option>
+    return (
+        <div>
+            <Formik
+                enableReinitialize
+                initialValues={{
+                    name: "",
+                    profit: 0,
+                    dateOfCreation: "",
+                    id: 1,
+                    successCheck: false
+                }}
+                onSubmit={submit}
+            >
+                {({ handleSubmit,
+                      errors,
+                      touched,
+                      handleChange,
+                      setFieldValue, values }) => (
+                    <form onSubmit={handleSubmit}>
+                        <Field
+                            value={values.name}
+                            onChange={(e: any) => onNameChange(e, handleChange, setFieldValue)}
+                            name="name"
+                            as="select"
+                            className={style.inputFieldOption}
+                            validate={required}
+                        >
+                            <option key="default" value="">
+                                Виберіть підприємство:
+                            </option>
                             {optionElement}
-                    </Field>
+                        </Field>
 
-                    <Field
-                        value={profit} onChange={onProfitChange}
-                        type='number' name='profit' className={style.inputField}/>
+                        <Field
+                            value={values.profit}
+                            onChange={handleChange}
+                            type="number"
+                            name="profit"
+                            className={style.inputField}
+                            validate={required}
+                        />
+                        {errors.profit && touched.profit && <div>{errors.profit}</div>}
 
-                    <Field
-                        value={dateOfCreation} onChange={onDateOfCreationChange}
-                        type='date' name='dateOfCreation' placeholder={"дд-мм-рррр"}
-                        className={style.inputField}/>
+                        <Field
+                            value={values.dateOfCreation}
+                            onChange={handleChange}
+                            type="date"
+                            name="dateOfCreation"
+                            placeholder="дд-мм-рррр"
+                            className={style.inputField}
+                            validate={required}
+                        />
+                        {errors.dateOfCreation && touched.dateOfCreation && <div>{errors.dateOfCreation}</div>}
 
-                    <button type="submit" className={style.button}>
-                        Submit
-                    </button>
-                    {successCheck? <p>Змінено</p> : <p></p>}
-                </form>
-            )}
-        </Formik>
-    </div>
-}
+                        <button type="submit" className={style.button}>
+                            Submit
+                        </button>
+                        {values.successCheck ? <p>Змінено</p> : <p></p>}
+                    </form>
+                )}
+            </Formik>
+        </div>
+    );
+};
