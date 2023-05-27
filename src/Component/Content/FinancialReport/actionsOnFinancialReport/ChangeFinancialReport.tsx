@@ -1,73 +1,80 @@
 import {useDispatch, useSelector} from "react-redux";
-import React, {useEffect, useState} from "react";
+import React, {useEffect} from "react";
 import {getEnterprise} from "../../../../Redux/Reducers/enterprise-reducer";
 import {Field, Formik} from "formik";
 import style from "../FinancialReport.module.css";
 import {getFinancialReportSelector} from "../../../../Redux/selector/financialReport-selector";
 import {changeFinancialReport} from "../../../../Redux/Reducers/financialReport-reducer";
+import {required} from "../../../../utils/validators/validators";
+
+type SubmitType = {
+    name: string,
+    profit: number,
+    id: number,
+    dateOfStart: string,
+    dateOfEnd: string
+}
 
 export const ChangeFinancialReport = () => {
     const financialReport = useSelector(getFinancialReportSelector)
     const dispatch = useDispatch();
 
-    const [name, setName] = useState('')
-    const [profit, setProfit] = useState( 0 )
-    const [dateOfStart, setDateOfStart] = useState( '' )
-    const [dateOfEnd, setDateOfEnd] = useState( '' )
-    const [id, setId] = useState(0)
-
     useEffect(() => {
         dispatch(getEnterprise());
-    }, []);
-    const submit = () => {
-        dispatch(changeFinancialReport(id, name, profit,
-            dateOfStart, dateOfEnd, 'false'));
-        setName('');
-        setProfit(0);
-        setDateOfStart('');
-        setDateOfEnd('');
+    }, [dispatch]);
+    const submit = (values: SubmitType) => {
+        dispatch(changeFinancialReport(values.id, values.name, values.profit,
+            values.dateOfStart, values.dateOfEnd, 'false'));
+
+        values.name = ''
+        values.profit = 0
+        values.dateOfStart = ''
+        values.dateOfEnd = ''
     };
 
-    const onNameChange = (e: any) => {
-        const selectedName = e.currentTarget.value;
-        setName(selectedName);
+    const onNameChange = (e: any, handleChange: any, setFieldValue: any) => {
+        const selectedId = e.currentTarget.value;
 
-        const selectedFinancialReport = financialReport.find(d => d.name === selectedName);
+        handleChange(e);
+
+        const selectedFinancialReport = financialReport.find(d => d.id === +selectedId);
         if (selectedFinancialReport) {
-            setProfit(selectedFinancialReport.profit);
-            setDateOfStart(selectedFinancialReport.dateOfStart);
-            setDateOfEnd(selectedFinancialReport.dateOfEnd);
-            setId(selectedFinancialReport.id)
+            setFieldValue("profit", selectedFinancialReport.profit);
+            setFieldValue("dateOfStart", selectedFinancialReport.dateOfStart);
+            setFieldValue("dateOfEnd", selectedFinancialReport.dateOfEnd);
+            setFieldValue("id", selectedFinancialReport.id);
+            setFieldValue("name", selectedFinancialReport.name);
         }
     }
 
-    const onProfitChange = (e: any) => {
-        setProfit(e.currentTarget.value);
-    }
-
-    const onDateOfStartChange = (e: any) => {
-        setDateOfStart(e.currentTarget.value);
-    }
-
-    const onDateOfEndChange = (e: any) => {
-        setDateOfEnd(e.currentTarget.value);
-    }
-
-    let optionElement = financialReport.map(d => <option key={d.id} value={d.name}>{d.name}</option>);
+    let optionElement = financialReport.map(d => (
+        <option key={d.id} value={d.id}>{d.name}</option>
+    ));
 
     return (
         <div>
             <Formik
-                initialValues={{name: "", profit: 0,
+                initialValues={{
+                    name: "",
+                    profit: 0,
                     dateOfStart: "",
-                    dateOfEnd: ""}}
+                    dateOfEnd: "",
+                    id: 0}}
                 onSubmit={submit}
             >
-                {({handleSubmit}) => (
+                {({handleSubmit,
+                      errors,
+                      touched,
+                      handleChange,
+                      setFieldValue,
+                      values}) => (
                     <form onSubmit={handleSubmit}>
                         <Field
-                            value={name} onChange={onNameChange}
-                            name="name" as="select" className={style.inputFieldOption}>
+                            value={values.name}
+                            onChange={(e: any) => onNameChange(e, handleChange, setFieldValue)}
+                            name="name"
+                            as="select"
+                            className={style.inputFieldOption}>
                             <option key="default" value="">Виберіть звіт: </option>
                             {optionElement}
                         </Field>
@@ -75,26 +82,34 @@ export const ChangeFinancialReport = () => {
                         <Field
                             type="number"
                             name="profit"
-                            value={profit}
+                            value={values.profit}
                             className={style.inputField}
-                            onChange={onProfitChange}
+                            onChange={handleChange}
+                            validate={required}
                         />
+                        {errors.profit && touched.profit && <div>{errors.profit}</div>}
+
 
                         <Field
                             type="date"
                             name="dateOfStart"
-                            value={dateOfStart}
+                            value={values.dateOfStart}
                             className={style.inputField}
-                            onChange={onDateOfStartChange}
+                            onChange={handleChange}
+                            validate={required}
                         />
+                        {errors.dateOfStart && touched.dateOfStart && <div>{errors.dateOfStart}</div>}
+
 
                         <Field
                             type="date"
                             name="dateOfEnd"
-                            value={dateOfEnd}
+                            value={values.dateOfEnd}
                             className={style.inputField}
-                            onChange={onDateOfEndChange}
+                            onChange={handleChange}
+                            validate={required}
                         />
+                        {errors.dateOfEnd && touched.dateOfEnd && <div>{errors.dateOfEnd}</div>}
 
                         <button type="submit" className={style.button}>
                             Submit

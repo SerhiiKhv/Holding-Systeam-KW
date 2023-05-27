@@ -5,16 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b65767a5-3ac5-48eb-8066-f803a31a0157" name="Changes" comment="Update Currency">
-      <change afterPath="$PROJECT_DIR$/src/Component/Content/Currency/Currency.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Content/Company/actionsOnCompany/AddCompany.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/Company/actionsOnCompany/AddCompany.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Content/Currency/Currency.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/Currency/Currency.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Content/Enterprise/actionsOnEnterprise/AddEnterprise.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/Enterprise/actionsOnEnterprise/AddEnterprise.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Content/Enterprise/actionsOnEnterprise/DeleteEnterprice.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/Enterprise/actionsOnEnterprise/DeleteEnterprice.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Content/Enterprise/actionsOnEnterprise/changeEnterprise.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/Enterprise/actionsOnEnterprise/changeEnterprise.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/Content/FinancialReport/actionsOnFinancialReport/AddFinancialReport.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/FinancialReport/actionsOnFinancialReport/AddFinancialReport.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/Content/FinancialReport/actionsOnFinancialReport/ChangeFinancialReport.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/FinancialReport/actionsOnFinancialReport/ChangeFinancialReport.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/NodeJS/DateJSON/Company.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/NodeJS/DateJSON/Company.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/NodeJS/DateJSON/Enterprises.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/NodeJS/DateJSON/Enterprises.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/validators/validators.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/validators/validators.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NodeJS/DateJSON/FinancialReport.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/NodeJS/DateJSON/FinancialReport.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,7 +168,8 @@
       <workItem from="1684231574247" duration="166000" />
       <workItem from="1684312015610" duration="166000" />
       <workItem from="1684312805836" duration="5958000" />
-      <workItem from="1684661973381" duration="4448000" />
+      <workItem from="1684661973381" duration="4697000" />
+      <workItem from="1685217909554" duration="4941000" />
     </task>
     <task id="LOCAL-00001" summary="Start">
       <created>1680701964809</created>
@@ -363,16 +360,34 @@
       <option name="project" value="LOCAL" />
       <updated>1684319492818</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Update Company">
+      <created>1684666608906</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1684666608906</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Update Enterprise (Formik update -useState + formik function)">
+      <created>1684666676999</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1684666676999</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Currency mini refactoring">
+      <created>1684666708370</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1684666708370</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added functions for currency" />
-    <MESSAGE value="Added Enterprises" />
-    <MESSAGE value="Added EnterpriseJSON and update Currency" />
     <MESSAGE value="Added AddEnterprise підготовка" />
     <MESSAGE value="Added node.js" />
     <MESSAGE value="I keep progress" />
@@ -395,6 +410,9 @@
     <MESSAGE value="Update CSS for Enterprise" />
     <MESSAGE value="Update CSS for FinancialReport" />
     <MESSAGE value="Update Currency" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update Currency" />
+    <MESSAGE value="Update Company" />
+    <MESSAGE value="Update Enterprise (Formik update -useState + formik function)" />
+    <MESSAGE value="Currency mini refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="Currency mini refactoring" />
   </component>
 </project>
