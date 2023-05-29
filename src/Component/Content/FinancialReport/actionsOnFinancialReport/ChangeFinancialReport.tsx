@@ -33,7 +33,7 @@ export const ChangeFinancialReport = () => {
     };
 
     const onNameChange = (e: any, handleChange: any, setFieldValue: any) => {
-        const selectedId = e.currentTarget.value;
+        let selectedId=  e.currentTarget.options[e.currentTarget.selectedIndex].dataset.id
 
         handleChange(e);
 
@@ -43,12 +43,11 @@ export const ChangeFinancialReport = () => {
             setFieldValue("dateOfStart", selectedFinancialReport.dateOfStart);
             setFieldValue("dateOfEnd", selectedFinancialReport.dateOfEnd);
             setFieldValue("id", selectedFinancialReport.id);
-            setFieldValue("name", selectedFinancialReport.name);
         }
     }
 
     let optionElement = financialReport.map(d => (
-        <option key={d.id} value={d.id}>{d.name}</option>
+        <option key={d.id} value={d.name} data-id={d.id}>{d.name}</option>
     ));
 
     return (
@@ -75,7 +74,7 @@ export const ChangeFinancialReport = () => {
                             name="name"
                             as="select"
                             className={style.inputFieldOption}>
-                            <option key="default" value="">Виберіть звіт: </option>
+                            <option key="default" value=''>Виберіть звіт: </option>
                             {optionElement}
                         </Field>
 
