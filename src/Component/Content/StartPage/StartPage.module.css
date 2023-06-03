@@ -1,0 +1,45 @@
+.startPage {
+    display: grid;
+    grid-template-areas:
+    "t t"
+    "u u";
+
+    grid-template-rows: 80vh 12vh;
+    grid-template-columns: 1fr 5fr;
+}
+
+.topPage {
+    grid-area: t;
+}
+
+.underPage {
+    grid-area: u;
+    background-color: #333;
+}
+
+.footerLinks {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+    background-color: #333;
+}
+
+.footerLinks li {
+    margin-right: 20px;
+}
+
+.footerLinks a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footerLinks a:hover {
+    text-decoration: underline;
+}
+
+.footerLinks img {
+    height: 50px;
+}
