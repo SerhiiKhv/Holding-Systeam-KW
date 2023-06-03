@@ -2,8 +2,11 @@
   grid-area: n;
   background-color: #057fd0;
   display: grid;
-  grid-template-columns: 0.2fr 1fr 1fr 1fr 1fr;
   align-items: center;
+}
+
+.nav div{
+  margin-left: 20px;
 }
 
 .activeLink {
@@ -17,6 +20,6 @@
 }
 
 .logo {
-  height: 40px;
+  height: 60px;
   margin-left: 10px;
 }

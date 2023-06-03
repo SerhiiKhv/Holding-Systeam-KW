@@ -4,19 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b65767a5-3ac5-48eb-8066-f803a31a0157" name="Changes" comment="Update Currency">
-      <change afterPath="$PROJECT_DIR$/src/Assets/img/gitHub.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Assets/img/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Assets/img/telegram.svg.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Component/Content/StartPage/StartPage.module.css" afterDir="false" />
+    <list default="true" id="b65767a5-3ac5-48eb-8066-f803a31a0157" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Content/Company/actionsOnCompany/DeleteCompany.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/Company/actionsOnCompany/DeleteCompany.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/Content/StartPage/StartPage.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/StartPage/StartPage.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Component/Content/StartPage/StartPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/StartPage/StartPage.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Component/Nav/Nav.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Nav/Nav.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Nav/Nav.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Nav/Nav.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NodeJS/DateJSON/Company.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/NodeJS/DateJSON/Company.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NodeJS/DateJSON/Enterprises.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/NodeJS/DateJSON/Enterprises.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NodeJS/DateJSON/FinancialReport.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/NodeJS/DateJSON/FinancialReport.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,7 +172,8 @@
       <workItem from="1685223015874" duration="21000" />
       <workItem from="1685364961581" duration="3584000" />
       <workItem from="1685715821786" duration="3250000" />
-      <workItem from="1685802579269" duration="5303000" />
+      <workItem from="1685802579269" duration="5500000" />
+      <workItem from="1685816684094" duration="2642000" />
     </task>
     <task id="LOCAL-00001" summary="Start">
       <created>1680701964809</created>
@@ -405,7 +399,21 @@
       <option name="project" value="LOCAL" />
       <updated>1685366963279</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="mini Update">
+      <created>1685808022358</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1685808022358</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Update StartPage">
+      <created>1685808045310</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1685808045310</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -423,8 +431,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="I keep progress" />
-    <MESSAGE value="Added Api(get) for Enterprises" />
     <MESSAGE value="Added Api(post) for Enterprises" />
     <MESSAGE value="Added Api(put) for Enterprises" />
     <MESSAGE value="Updated API(put) for enterprises, but there are still bugs" />
@@ -448,6 +454,8 @@
     <MESSAGE value="Currency mini refactoring" />
     <MESSAGE value="Update FinancialReport (use Formik function, -useState)" />
     <MESSAGE value="fix ChangeFinancialReport, name display error" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix ChangeFinancialReport, name display error" />
+    <MESSAGE value="mini Update" />
+    <MESSAGE value="Update StartPage" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update StartPage" />
   </component>
 </project>

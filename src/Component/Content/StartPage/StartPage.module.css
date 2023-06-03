@@ -3,18 +3,23 @@
     grid-template-areas:
     "t t"
     "u u";
-
-    grid-template-rows: 80vh 12vh;
     grid-template-columns: 1fr 5fr;
 }
 
 .topPage {
     grid-area: t;
+    margin-left: 10px;
 }
 
 .underPage {
     grid-area: u;
     background-color: #333;
+    display: grid;
+    grid-template-columns: auto 1fr 1fr 4fr;
+    justify-items: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
 }
 
 .footerLinks {
@@ -42,4 +47,9 @@
 
 .footerLinks img {
     height: 50px;
+}
+
+.nameText{
+    color: white;
+    margin-left: 20px;
 }

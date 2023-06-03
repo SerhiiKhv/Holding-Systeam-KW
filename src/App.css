@@ -5,11 +5,9 @@
   display: grid;
 
   grid-template-areas:
-   "n n"
-   "c c";
+   "n c";
 
-  grid-template-rows: 60px 1fr;
-  grid-template-columns: 1fr 5fr;
+  grid-template-columns: 20vh;
 }
 
 
