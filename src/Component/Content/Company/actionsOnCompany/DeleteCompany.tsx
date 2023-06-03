@@ -1,7 +1,7 @@
 import {useDispatch, useSelector} from "react-redux";
 import React, {useState} from "react";
 import {Field, Formik} from "formik";
-import style from "../../Enterprise/Enterprise.module.css";
+import style from "../Company.module.css";
 import {destroyCompany} from "../../../../Redux/Reducers/company-reducer";
 import {getCompanySelector} from "../../../../Redux/selector/company-selector";
 
