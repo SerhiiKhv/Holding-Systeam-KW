@@ -5,11 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b65767a5-3ac5-48eb-8066-f803a31a0157" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Assets/img/Instagram.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/img/LinkedIn_icon_circle.svg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/img/email.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/img/phone.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/img/stock-illustration-isometric-concept-for-big-business.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Component/Content/StartPage/StartPage.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/StartPage/StartPage.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Component/Content/StartPage/StartPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content/StartPage/StartPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Nav/Nav.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Nav/Nav.module.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +103,7 @@
       <recent name="E:\Навчання\Курсові\Курсова 6 семестр\cod\src\Redux\DateJSON" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.npm start">
+  <component name="RunManager" selected="Node.js.server.js">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
       <method v="2" />
     </configuration>
@@ -173,7 +176,8 @@
       <workItem from="1685364961581" duration="3584000" />
       <workItem from="1685715821786" duration="3250000" />
       <workItem from="1685802579269" duration="5500000" />
-      <workItem from="1685816684094" duration="2642000" />
+      <workItem from="1685816684094" duration="2745000" />
+      <workItem from="1685891752664" duration="5287000" />
     </task>
     <task id="LOCAL-00001" summary="Start">
       <created>1680701964809</created>
@@ -413,7 +417,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685808045310</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Update StartPage">
+      <created>1685819455907</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1685819455907</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

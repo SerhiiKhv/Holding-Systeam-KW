@@ -1,9 +1,13 @@
+/* Основний CSS код */
+
 .startPage {
     display: grid;
     grid-template-areas:
-    "t t"
-    "u u";
+    "t t i"
+    "u u u";
     grid-template-columns: 1fr 5fr;
+    height: 100vh;
+    background-color: white;
 }
 
 .topPage {
@@ -15,7 +19,7 @@
     grid-area: u;
     background-color: #333;
     display: grid;
-    grid-template-columns: auto 1fr 1fr 4fr;
+    grid-template-columns: auto 1fr 1fr 1fr 1fr 1fr;
     justify-items: center;
     align-items: center;
     position: fixed;
@@ -49,7 +53,48 @@
     height: 50px;
 }
 
-.nameText{
+.nameText {
     color: white;
     margin-left: 20px;
+}
+
+.imgHolding {
+    grid-area: i;
+    margin: 10px;
+}
+
+.contact {
+    color: white;
+}
+
+.contactItem {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.contactItem img {
+    height: 15px;
+    margin-right: 5px;
+}
+
+.contactItem a{
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 900px) {
+    .startPage {
+        grid-template-areas:
+      "t t"
+      "i i"
+      "u u";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+    }
+
+    .imgHolding {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 }
